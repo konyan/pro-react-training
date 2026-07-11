@@ -1,6 +1,7 @@
 import { motion, useReducedMotion } from 'framer-motion'
 import AnimatedSection from '../components/AnimatedSection'
 import AnimatedCard from '../components/AnimatedCard'
+import { stepThreeDeliverable } from './data'
 
 const steps = [
   {
@@ -12,6 +13,11 @@ const steps = [
     number: '2',
     title: 'Extend it with AI',
     body: 'In Course 02 you add a new feature entirely through an agent workflow, landing it as a clean pull request with a spec and passing tests.',
+  },
+  {
+    number: '3',
+    title: 'Get hired with it',
+    body: stepThreeDeliverable,
   },
 ]
 
@@ -26,11 +32,11 @@ export default function HowItWorks() {
             HOW IT WORKS
           </p>
           <h2 className="text-3xl font-bold tracking-tight text-text-primary lg:text-[40px]">
-            One project carries you the whole way through.
+            One project carries you the whole way through — including your job hunt.
           </h2>
         </AnimatedSection>
 
-        <div className="grid gap-6 lg:grid-cols-2">
+        <div className="grid gap-6 lg:grid-cols-3">
           {steps.map((step, idx) => (
             <AnimatedCard
               key={idx}

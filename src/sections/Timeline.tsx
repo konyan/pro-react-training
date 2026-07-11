@@ -20,6 +20,7 @@ const rows = [
   { week: '11', dates: '10–11 Oct', phase: 'Course 02 · AI Coding', phaseColor: 'bg-blue-100 text-accent-blue', title: 'Consistency → Slicing → Spec-Driven Dev', desc: 'AGENTS.md, vertical slicing, plan mode & CI guardrails · spec a real feature' },
   { week: '12', dates: '17–18 Oct', phase: 'Capstone · Group Build', phaseColor: 'bg-amber-100 text-amber-700', title: 'Group Build — Week 1', desc: 'Drive your own full-stack project feature-by-feature through a full agent workflow' },
   { week: '13', dates: '24–25 Oct', phase: 'Capstone · Group Build', phaseColor: 'bg-amber-100 text-amber-700', title: 'Group Build — Week 2 + Demo', desc: 'Harden, test & ship, then present your finished app on demo day' },
+  { week: '14', dates: '31 Oct–01 Nov', phase: 'Bonus · Career Launch', phaseColor: 'bg-amber-500/15 text-amber-700', title: 'Getting Hired — Career Launch', desc: 'CV, LinkedIn, live portfolio, freelancing basics & interview prep — package your capstone for the job hunt', bonus: true },
 ]
 
 export default function Timeline() {
@@ -58,20 +59,20 @@ export default function Timeline() {
       <div className="mx-auto flex max-w-[1440px] flex-col gap-8 px-6 py-16 lg:px-[120px] lg:py-24">
         <AnimatedSection className="flex max-w-[900px] flex-col gap-4">
           <p className="font-mono text-sm font-semibold uppercase tracking-[1px] text-primary">
-            THE 13-WEEK TIMELINE
+            THE 14-WEEK TIMELINE
           </p>
           <h2 className="text-3xl font-bold tracking-tight text-text-primary lg:text-[36px]">
-            Thirteen weeks, one weekend at a time.
+            Fourteen weeks, one weekend at a time.
           </h2>
           <p className="max-w-[720px] text-[17px] leading-relaxed text-text-secondary">
             Nine weeks to build production React with a real Supabase backend, two to work with AI
-            agents, then a two-week group build where you ship your own full-stack project.
+            agents, a two-week group build, then one bonus week to launch your career.
           </p>
         </AnimatedSection>
 
         <AnimatedSection delay={0.1}>
           <div className="w-fit rounded-full border border-border bg-bg-light px-4 py-2 text-sm text-text-primary">
-            Starts Sat 1 Aug 2026 · 13 weeks · 6 hrs/week · Sat & Sun · 3 hrs/day
+            Starts Sat 1 Aug 2026 · 14 weeks · 6 hrs/week · Sat & Sun · 3 hrs/day
           </div>
         </AnimatedSection>
 
@@ -85,39 +86,72 @@ export default function Timeline() {
 
           <div className="hidden h-px bg-border lg:block" />
 
-          {rows.map((row, idx) => (
-            <div
-              key={row.week}
-              ref={(el) => { rowRefs.current[idx] = el }}
-              className={`border-b border-border transition-colors last:border-b-0 hover:bg-callout-bg/30 lg:grid lg:grid-cols-[60px_140px_200px_1fr] lg:items-center lg:gap-4 lg:border-b-0 lg:px-6 lg:py-4 ${idx % 2 === 1 ? 'bg-surface' : 'bg-bg-light'}`}
-            >
-              <div className="flex flex-col gap-3 p-5 lg:hidden">
-                <div className="flex items-center justify-between gap-3">
-                  <span className={`w-fit rounded-full px-2.5 py-1 text-xs font-semibold ${row.phaseColor}`}>
-                    {row.phase}
-                  </span>
-                  <span className="font-mono text-sm text-text-secondary">{row.dates}</span>
+          {/* Bonus separator */}
+          <div className="hidden items-center gap-3 px-6 py-2 lg:flex">
+            <div className="h-px flex-1 bg-gradient-to-r from-amber-300 via-amber-200 to-transparent" />
+            <span className="flex items-center gap-1.5 rounded-full bg-amber-500/10 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-amber-600">
+              <span>🎁</span> Bonus Track
+            </span>
+            <div className="h-px flex-1 bg-gradient-to-l from-amber-300 via-amber-200 to-transparent" />
+          </div>
+
+          {rows.map((row, idx) => {
+            const isBonus = 'bonus' in row && row.bonus
+
+            return (
+              <div
+                key={row.week}
+                ref={(el) => { rowRefs.current[idx] = el }}
+                className={`border-b border-border transition-colors last:border-b-0 lg:grid lg:grid-cols-[60px_140px_200px_1fr] lg:items-center lg:gap-4 lg:border-b-0 lg:px-6 lg:py-4 ${
+                  isBonus
+                    ? 'bg-gradient-to-r from-amber-50 via-amber-50/80 to-bg-light hover:bg-amber-50/90'
+                    : `hover:bg-callout-bg/30 ${idx % 2 === 1 ? 'bg-surface' : 'bg-bg-light'}`
+                }`}
+              >
+                {/* Mobile */}
+                <div className="flex flex-col gap-3 p-5 lg:hidden">
+                  <div className="flex items-center justify-between gap-3">
+                    <span className={`w-fit rounded-full px-2.5 py-1 text-xs font-semibold ${row.phaseColor}`}>
+                      {isBonus && <span className="mr-1">🎁</span>}
+                      {row.phase}
+                    </span>
+                    <span className="font-mono text-sm text-text-secondary">{row.dates}</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <span className={`flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full font-mono text-sm font-bold ${
+                      isBonus
+                        ? 'bg-amber-500 text-white'
+                        : 'bg-surface text-text-primary'
+                    }`}>
+                      {row.week}
+                    </span>
+                    <span className="text-[15px] font-semibold text-text-primary">{row.title}</span>
+                  </div>
+                  <span className="text-sm leading-relaxed text-text-secondary">{row.desc}</span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <span className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-surface font-mono text-sm font-bold text-text-primary">
+
+                {/* Desktop */}
+                <span className="hidden lg:block">
+                  <span className={`inline-flex h-8 w-8 items-center justify-center rounded-full font-mono text-sm font-bold ${
+                    isBonus
+                      ? 'bg-amber-500 text-white'
+                      : 'text-text-primary'
+                  }`}>
                     {row.week}
                   </span>
+                </span>
+                <span className="hidden text-sm text-text-secondary lg:block">{row.dates}</span>
+                <span className={`hidden w-fit rounded-full px-2.5 py-1 text-xs font-semibold lg:block ${row.phaseColor}`}>
+                  {isBonus && <span className="mr-1">🎁</span>}
+                  {row.phase}
+                </span>
+                <div className="hidden flex-col gap-1 lg:flex">
                   <span className="text-[15px] font-semibold text-text-primary">{row.title}</span>
+                  <span className="text-sm leading-relaxed text-text-secondary">{row.desc}</span>
                 </div>
-                <span className="text-sm leading-relaxed text-text-secondary">{row.desc}</span>
               </div>
-
-              <span className="hidden text-[15px] font-semibold text-text-primary lg:block">{row.week}</span>
-              <span className="hidden text-sm text-text-secondary lg:block">{row.dates}</span>
-              <span className={`hidden w-fit rounded-full px-2.5 py-1 text-xs font-semibold lg:block ${row.phaseColor}`}>
-                {row.phase}
-              </span>
-              <div className="hidden flex-col gap-1 lg:flex">
-                <span className="text-[15px] font-semibold text-text-primary">{row.title}</span>
-                <span className="text-sm leading-relaxed text-text-secondary">{row.desc}</span>
-              </div>
-            </div>
-          ))}
+            )
+          })}
         </div>
       </div>
     </section>

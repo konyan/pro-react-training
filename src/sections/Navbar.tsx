@@ -25,8 +25,8 @@ export default function Navbar() {
           whileHover={shouldReduceMotion ? {} : { scale: 1.02 }}
           transition={{ type: 'spring', stiffness: 400, damping: 17 }}
         >
-          <img src="/logo.svg" alt="The Frontend Path" className="h-20 w-20" />
-          <span className="text-base font-semibold text-text-primary">Sprint Lab</span>
+          <img src="/logo.png" alt="The Frontend Path" className="h-14 w-14" />
+          <span className="text-base fbunont-semibold text-text-primary">Sprint Lab</span>
         </motion.div>
 
         <div className="hidden items-center gap-9 md:flex">

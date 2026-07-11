@@ -7,6 +7,7 @@ import Timeline from './sections/Timeline'
 import Details from './sections/Details'
 import Instructor from './sections/Instructor'
 import CTA from './sections/CTA'
+import Bonus from './sections/Bonus'
 import Footer from './sections/Footer'
 import ScrollProgress from './components/ScrollProgress'
 
