@@ -1,4 +1,5 @@
 import { motion, useReducedMotion } from 'framer-motion'
+import { useEffect, useMemo, useState } from 'react'
 import AnimatedButton from '../components/AnimatedButton'
 import StaggerContainer, { StaggerItem } from '../components/StaggerContainer'
 
@@ -56,21 +57,61 @@ const codeLines = [
   { tokens: [{ text: '}', color: 'text-gray-200' }] },
 ]
 
-const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { type: 'spring' as const, stiffness: 300, damping: 24 },
-  },
+const TYPING_SPEED_MS = 35
+
+interface CodeChar {
+  char: string
+  color: string
+  line: number
+}
+
+function useTypewriterCode(lines: typeof codeLines, startDelay = 600) {
+  const chars = useMemo<CodeChar[]>(() => {
+    const result: CodeChar[] = []
+    lines.forEach((line, lineIndex) => {
+      line.tokens.forEach((token) => {
+        for (const char of token.text) {
+          result.push({ char, color: token.color, line: lineIndex })
+        }
+      })
+      if (lineIndex < lines.length - 1) {
+        result.push({ char: '\n', color: '', line: lineIndex })
+      }
+    })
+    return result
+  }, [lines])
+
+  const [visibleCount, setVisibleCount] = useState(0)
+
+  useEffect(() => {
+    const startTimeout = setTimeout(() => {
+      const interval = setInterval(() => {
+        setVisibleCount((prev) => {
+          if (prev >= chars.length) {
+            clearInterval(interval)
+            return prev
+          }
+          return prev + 1
+        })
+      }, TYPING_SPEED_MS)
+      return () => clearInterval(interval)
+    }, startDelay)
+    return () => clearTimeout(startTimeout)
+  }, [chars, startDelay])
+
+  return { chars, visibleCount }
 }
 
 export default function Hero() {
   const shouldReduceMotion = useReducedMotion()
+  const { chars, visibleCount } = useTypewriterCode(codeLines)
+  const activeLine =
+    visibleCount > 0 ? chars[Math.min(visibleCount - 1, chars.length - 1)].line + 1 : 0
+  const renderedCount = shouldReduceMotion ? chars.length : visibleCount
 
   return (
     <section className="bg-bg-light">
-      <div className="mx-auto flex max-w-[1440px] flex-col gap-20 px-6 py-24 lg:flex-row lg:px-[120px]">
+      <div className="mx-auto flex max-w-[1440px] flex-col gap-12 px-6 py-16 lg:flex-row lg:gap-20 lg:px-[120px] lg:py-24">
         <StaggerContainer className="flex flex-1 flex-col items-start gap-7" stagger={0.08} delay={0.1}>
           <StaggerItem>
             <div className="flex items-center gap-2.5 rounded-full bg-callout-bg px-3.5 py-1.5">
@@ -86,16 +127,14 @@ export default function Hero() {
           </StaggerItem>
 
           <StaggerItem>
-            <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-text-primary lg:text-[56px]">
-              Go from writing React to engineering the real thing.
+            <h1 className="text-3xl font-bold leading-[1.1] tracking-tight text-text-primary lg:text-[56px]">
+              Toy apps to real products — the React path.
             </h1>
           </StaggerItem>
 
           <StaggerItem>
-            <p className="max-w-[640px] text-lg leading-relaxed text-text-secondary">
-              A hands-on, two-course path that teaches modern React deeply, all the way to a tested,
-              production-ready full-stack app with real accounts and a database, then shows you how
-              to build software with AI agents the way senior engineers actually work in 2026.
+            <p className="max-w-[640px] text-base leading-relaxed text-text-secondary lg:text-lg">
+              A hands-on, two-course path that teaches modern React deeply all the way to a tested, production-ready full-stack app you build solo, with real accounts, a database and storage powered by a Backend-as-a-Service (Supabase, with Firebase awareness), then shows you how to build software with AI agents the way senior engineers actually work in 2026.
             </p>
           </StaggerItem>
 
@@ -141,7 +180,7 @@ export default function Hero() {
         </StaggerContainer>
 
         <motion.div
-          className="w-full lg:w-[560px]"
+          className="w-full min-w-0 lg:w-[560px]"
           initial={{ opacity: shouldReduceMotion ? 1 : 0, x: shouldReduceMotion ? 0 : 40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: 'easeOut' }}
@@ -160,30 +199,20 @@ export default function Hero() {
               <span className="font-mono text-xs text-text-tertiary">app/page.tsx</span>
             </div>
 
-            <div className="flex text-sm">
-              <div className="w-11 flex-shrink-0 py-5 pr-4 text-right font-mono leading-6 text-[#3F4757]">
-                {codeLines.map((_, i) => (
+            <div className="flex overflow-x-auto text-xs lg:text-sm">
+              <div className="w-10 flex-shrink-0 py-4 pr-3 text-right font-mono leading-6 text-[#3F4757] lg:w-11 lg:py-5 lg:pr-4">
+                {Array.from({ length: activeLine }, (_, i) => (
                   <div key={i}>{i + 1}</div>
                 ))}
               </div>
 
-              <div className="flex-1 py-5 pr-5 font-mono leading-6">
-                {codeLines.map((line, i) => (
-                  <motion.div
-                    key={i}
-                    variants={itemVariants}
-                    initial="hidden"
-                    animate="visible"
-                    transition={{ delay: 0.6 + i * 0.05 }}
-                    className="flex min-h-[24px] flex-wrap items-center"
-                  >
-                    {line.tokens.map((token, j) => (
-                      <span key={j} className={token.color}>
-                        {token.text}
-                      </span>
-                    ))}
-                  </motion.div>
+              <div className="flex-1 whitespace-pre py-4 pr-4 font-mono leading-6 lg:py-5 lg:pr-5">
+                {chars.slice(0, renderedCount).map((item, i) => (
+                  <span key={i} className={item.color}>
+                    {item.char === '\n' ? '\n' : item.char === ' ' ? '\u00A0' : item.char}
+                  </span>
                 ))}
+                <span className="animate-cursor text-gray-200">|</span>
               </div>
             </div>
           </motion.div>

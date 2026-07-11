@@ -42,7 +42,7 @@ export default function Curriculum() {
 
   return (
     <section id="curriculum" className="bg-surface">
-      <div className="mx-auto flex max-w-[1440px] flex-col gap-16 px-6 py-24 lg:px-[120px]">
+      <div className="mx-auto flex max-w-[1440px] flex-col gap-12 px-6 py-16 lg:gap-16 lg:px-[120px] lg:py-24">
         <AnimatedSection className="flex max-w-[900px] flex-col gap-4">
           <p className="font-mono text-sm font-semibold uppercase tracking-[2px] text-primary">
             THE CURRICULUM
@@ -57,7 +57,7 @@ export default function Curriculum() {
         </AnimatedSection>
 
         <div className="grid gap-6 lg:grid-cols-2">
-          <AnimatedCard className="flex flex-col gap-6 rounded-xl border border-border bg-bg-light p-10 shadow-sm">
+          <AnimatedCard className="flex flex-col gap-6 rounded-xl border border-border bg-bg-light p-6 shadow-sm lg:p-10">
             <div className="flex flex-col gap-3">
               <span className="w-fit rounded-full bg-callout-bg px-3 py-1 text-xs font-semibold text-primary">
                 Course 01
@@ -90,7 +90,7 @@ export default function Curriculum() {
             </motion.div>
           </AnimatedCard>
 
-          <AnimatedCard className="flex flex-col gap-6 rounded-xl border border-border bg-bg-light p-10 shadow-sm" delay={0.15}>
+          <AnimatedCard className="flex flex-col gap-6 rounded-xl border border-border bg-bg-light p-6 shadow-sm lg:p-10" delay={0.15}>
             <div className="flex flex-col gap-3">
               <span className="w-fit rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-accent-blue">
                 Course 02

@@ -5,7 +5,7 @@ import StaggerContainer, { StaggerItem } from '../components/StaggerContainer'
 export default function CTA() {
   return (
     <section id="cta" className="bg-bg-dark">
-      <div className="mx-auto flex max-w-[1440px] flex-col items-center gap-8 px-6 py-24 text-center lg:px-[120px]">
+      <div className="mx-auto flex max-w-[1440px] flex-col items-center gap-8 px-6 py-16 text-center lg:px-[120px] lg:py-24">
         <AnimatedSection>
           <p className="font-mono text-sm font-semibold uppercase tracking-[1px] text-primary">
             READY WHEN YOU ARE
@@ -25,24 +25,24 @@ export default function CTA() {
           </p>
         </AnimatedSection>
 
-        <StaggerContainer className="flex flex-wrap justify-center gap-3" stagger={0.08} delay={0.2}>
-          <StaggerItem>
-            <AnimatedButton variant="primary" className="px-6 py-3.5 text-[15px]">
+        <StaggerContainer className="flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:flex-wrap sm:items-center" stagger={0.08} delay={0.2}>
+          <StaggerItem className="w-full sm:w-auto">
+            <AnimatedButton variant="primary" className="w-full px-6 py-3.5 text-[15px]">
               Message me to join
             </AnimatedButton>
           </StaggerItem>
-          <StaggerItem>
-            <AnimatedButton variant="outline" className="gap-2 px-5 py-3.5 text-[15px]">
+          <StaggerItem className="w-full sm:w-auto">
+            <AnimatedButton variant="outline" className="w-full gap-2 px-5 py-3.5 text-[15px]">
               <span>💬</span> Messenger
             </AnimatedButton>
           </StaggerItem>
-          <StaggerItem>
-            <AnimatedButton variant="outline" className="gap-2 px-5 py-3.5 text-[15px]">
+          <StaggerItem className="w-full sm:w-auto">
+            <AnimatedButton variant="outline" className="w-full gap-2 px-5 py-3.5 text-[15px]">
               <span>✈️</span> Telegram
             </AnimatedButton>
           </StaggerItem>
-          <StaggerItem>
-            <AnimatedButton variant="outline" className="gap-2 px-5 py-3.5 text-[15px]">
+          <StaggerItem className="w-full sm:w-auto">
+            <AnimatedButton variant="outline" className="w-full gap-2 px-5 py-3.5 text-[15px]">
               <span>✉️</span> Email
             </AnimatedButton>
           </StaggerItem>

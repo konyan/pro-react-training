@@ -25,7 +25,7 @@ export default function Details() {
 
   return (
     <section id="details" className="bg-bg-light">
-      <div className="mx-auto flex max-w-[1440px] flex-col gap-12 px-6 py-24 lg:px-[120px]">
+      <div className="mx-auto flex max-w-[1440px] flex-col gap-10 px-6 py-16 lg:gap-12 lg:px-[120px] lg:py-24">
         <AnimatedSection className="flex max-w-[900px] flex-col gap-4">
           <p className="font-mono text-sm font-semibold uppercase tracking-[1px] text-primary">
             THE DETAILS
@@ -37,7 +37,7 @@ export default function Details() {
 
         <div className="grid gap-6 lg:grid-cols-3">
           {details.map((item, idx) => (
-            <AnimatedCard key={item.title} className="flex flex-col gap-4 rounded-lg border border-border bg-bg-light p-8" delay={idx * 0.1}>
+            <AnimatedCard key={item.title} className="flex flex-col gap-4 rounded-lg border border-border bg-bg-light p-6 lg:p-8" delay={idx * 0.1}>
               <motion.span
                 whileHover={shouldReduceMotion ? {} : { scale: 1.15, rotate: 5 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 17 }}

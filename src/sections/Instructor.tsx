@@ -10,7 +10,7 @@ export default function Instructor() {
 
   return (
     <section id="instructor" className="bg-surface">
-      <div className="mx-auto flex max-w-[1440px] flex-col gap-12 px-6 py-24 lg:px-[120px]">
+      <div className="mx-auto flex max-w-[1440px] flex-col gap-10 px-6 py-16 lg:gap-12 lg:px-[120px] lg:py-24">
         <AnimatedSection className="flex max-w-[900px] flex-col gap-4">
           <p className="font-mono text-sm font-semibold uppercase tracking-[1px] text-primary">
             YOUR INSTRUCTOR
@@ -20,16 +20,20 @@ export default function Instructor() {
           </h2>
         </AnimatedSection>
 
-        <div className="flex flex-col items-center gap-16 lg:flex-row">
+        <div className="flex flex-col items-center gap-10 lg:flex-row lg:gap-16">
           <motion.div
             initial={{ opacity: shouldReduceMotion ? 1 : 0, scale: shouldReduceMotion ? 1 : 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             whileHover={shouldReduceMotion ? {} : { scale: 1.02 }}
-            className="flex h-[480px] w-full max-w-[420px] items-center justify-center rounded-xl bg-gradient-to-br from-primary to-primary-dark"
+            className="flex h-[360px] w-full max-w-[420px] items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-primary to-primary-dark lg:h-[480px]"
           >
-            <span className="text-6xl font-bold text-white/30">NLT</span>
+            <img
+              src="/konyan.webp"
+              alt="Nyan Lin Tun"
+              className="h-full w-full object-cover"
+            />
           </motion.div>
 
           <div className="flex flex-1 flex-col gap-5">

@@ -20,7 +20,7 @@ export default function HowItWorks() {
 
   return (
     <section className="bg-bg-light">
-      <div className="mx-auto flex max-w-[1440px] flex-col gap-16 px-6 py-24 lg:px-[120px]">
+      <div className="mx-auto flex max-w-[1440px] flex-col gap-12 px-6 py-16 lg:gap-16 lg:px-[120px] lg:py-24">
         <AnimatedSection className="flex max-w-[900px] flex-col gap-4">
           <p className="font-mono text-sm font-semibold uppercase tracking-[2px] text-primary">
             HOW IT WORKS
@@ -34,7 +34,7 @@ export default function HowItWorks() {
           {steps.map((step, idx) => (
             <AnimatedCard
               key={idx}
-              className="flex flex-col gap-5 rounded-xl border border-border bg-bg-light p-8"
+              className="flex flex-col gap-5 rounded-xl border border-border bg-bg-light p-6 lg:p-8"
               delay={idx * 0.15}
             >
               <motion.div
@@ -56,7 +56,7 @@ export default function HowItWorks() {
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
           whileHover={shouldReduceMotion ? {} : { y: -3 }}
-          className="flex items-start gap-6 rounded-xl border-l-4 border-primary bg-callout-bg p-8"
+          className="flex flex-col items-start gap-4 rounded-xl border-l-4 border-primary bg-callout-bg p-6 lg:flex-row lg:gap-6 lg:p-8"
         >
           <motion.div
             animate={shouldReduceMotion ? {} : { rotate: [0, 10, -10, 0] }}

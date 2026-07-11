@@ -55,7 +55,7 @@ export default function Timeline() {
 
   return (
     <section id="timeline" className="bg-surface">
-      <div className="mx-auto flex max-w-[1440px] flex-col gap-8 px-6 py-24 lg:px-[120px]">
+      <div className="mx-auto flex max-w-[1440px] flex-col gap-8 px-6 py-16 lg:px-[120px] lg:py-24">
         <AnimatedSection className="flex max-w-[900px] flex-col gap-4">
           <p className="font-mono text-sm font-semibold uppercase tracking-[1px] text-primary">
             THE 13-WEEK TIMELINE
@@ -76,27 +76,43 @@ export default function Timeline() {
         </AnimatedSection>
 
         <div ref={tableRef} className="overflow-hidden rounded-lg border border-border bg-bg-light">
-          <div className="grid grid-cols-[60px_140px_200px_1fr] gap-4 px-6 py-4 text-xs font-semibold uppercase tracking-wide text-text-secondary">
+          <div className="hidden grid-cols-[60px_140px_200px_1fr] gap-4 px-6 py-4 text-xs font-semibold uppercase tracking-wide text-text-secondary lg:grid">
             <span>Week</span>
             <span>Dates</span>
             <span>Phase</span>
             <span>Focus</span>
           </div>
 
-          <div className="h-px bg-border" />
+          <div className="hidden h-px bg-border lg:block" />
 
           {rows.map((row, idx) => (
             <div
               key={row.week}
               ref={(el) => { rowRefs.current[idx] = el }}
-              className={`grid grid-cols-[60px_140px_200px_1fr] items-center gap-4 px-6 py-4 transition-colors hover:bg-callout-bg/30 ${idx % 2 === 1 ? 'bg-surface' : 'bg-bg-light'}`}
+              className={`border-b border-border transition-colors last:border-b-0 hover:bg-callout-bg/30 lg:grid lg:grid-cols-[60px_140px_200px_1fr] lg:items-center lg:gap-4 lg:border-b-0 lg:px-6 lg:py-4 ${idx % 2 === 1 ? 'bg-surface' : 'bg-bg-light'}`}
             >
-              <span className="text-[15px] font-semibold text-text-primary">{row.week}</span>
-              <span className="text-sm text-text-secondary">{row.dates}</span>
-              <span className={`w-fit rounded-full px-2.5 py-1 text-xs font-semibold ${row.phaseColor}`}>
+              <div className="flex flex-col gap-3 p-5 lg:hidden">
+                <div className="flex items-center justify-between gap-3">
+                  <span className={`w-fit rounded-full px-2.5 py-1 text-xs font-semibold ${row.phaseColor}`}>
+                    {row.phase}
+                  </span>
+                  <span className="font-mono text-sm text-text-secondary">{row.dates}</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-surface font-mono text-sm font-bold text-text-primary">
+                    {row.week}
+                  </span>
+                  <span className="text-[15px] font-semibold text-text-primary">{row.title}</span>
+                </div>
+                <span className="text-sm leading-relaxed text-text-secondary">{row.desc}</span>
+              </div>
+
+              <span className="hidden text-[15px] font-semibold text-text-primary lg:block">{row.week}</span>
+              <span className="hidden text-sm text-text-secondary lg:block">{row.dates}</span>
+              <span className={`hidden w-fit rounded-full px-2.5 py-1 text-xs font-semibold lg:block ${row.phaseColor}`}>
                 {row.phase}
               </span>
-              <div className="flex flex-col gap-1">
+              <div className="hidden flex-col gap-1 lg:flex">
                 <span className="text-[15px] font-semibold text-text-primary">{row.title}</span>
                 <span className="text-sm leading-relaxed text-text-secondary">{row.desc}</span>
               </div>

@@ -70,7 +70,7 @@ export default function Toolkit() {
 
   return (
     <section className="bg-bg-dark">
-      <div className="mx-auto flex max-w-[1440px] flex-col gap-14 px-6 py-24 lg:px-[120px]">
+      <div className="mx-auto flex max-w-[1440px] flex-col gap-10 px-6 py-16 lg:gap-14 lg:px-[120px] lg:py-24">
         <AnimatedSection className="flex max-w-[900px] flex-col gap-4">
           <p className="font-mono text-sm font-semibold uppercase tracking-[2px] text-primary">
             THE TOOLKIT
@@ -90,7 +90,7 @@ export default function Toolkit() {
               <motion.div
                 whileHover={shouldReduceMotion ? {} : { y: -3, borderColor: 'rgba(45, 55, 72, 0.8)' }}
                 transition={{ type: 'spring', stiffness: 300, damping: 24 }}
-                className="flex flex-col items-start gap-6 rounded-xl border border-border-dark bg-surface-dark p-6 transition-colors md:flex-row md:items-center"
+                className="flex flex-col items-start gap-4 rounded-xl border border-border-dark bg-surface-dark p-5 transition-colors md:flex-row md:items-center md:gap-6 lg:p-6"
               >
                 <motion.div
                   whileHover={shouldReduceMotion ? {} : { rotate: 5, scale: 1.08 }}
@@ -100,14 +100,14 @@ export default function Toolkit() {
                   {group.icon}
                 </motion.div>
 
-                <div className="flex w-[200px] flex-col gap-0.5">
+                <div className="flex w-full flex-col gap-0.5 md:w-[200px]">
                   <span className="text-[15px] font-semibold text-gray-50">{group.label}</span>
                   <span className={`font-mono text-[11px] font-medium uppercase tracking-wider ${group.metaColor}`}>
                     {group.meta}
                   </span>
                 </div>
 
-                <div className="flex flex-wrap gap-2">
+                <div className="flex w-full flex-wrap gap-2">
                   {group.chips.map((chip) => (
                     <motion.span
                       key={chip}

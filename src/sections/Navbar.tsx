@@ -1,9 +1,11 @@
-import { motion, useReducedMotion } from 'framer-motion'
+import { motion, useReducedMotion, AnimatePresence } from 'framer-motion'
+import { useState } from 'react'
 
 const navLinks = ['Curriculum', 'Timeline', 'Instructor', 'Details']
 
 export default function Navbar() {
   const shouldReduceMotion = useReducedMotion()
+  const [mobileOpen, setMobileOpen] = useState(false)
 
   const scrollTo = (id: string) => {
     const el = document.getElementById(id.toLowerCase())
@@ -45,18 +47,79 @@ export default function Navbar() {
           ))}
         </div>
 
-        <motion.button
-          onClick={() => scrollTo('cta')}
-          initial={{ opacity: shouldReduceMotion ? 1 : 0, scale: shouldReduceMotion ? 1 : 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.4, delay: 0.3, type: 'spring', stiffness: 300, damping: 20 }}
-          whileHover={shouldReduceMotion ? {} : { scale: 1.05 }}
-          whileTap={shouldReduceMotion ? {} : { scale: 0.95 }}
-          className="rounded-md bg-primary px-[18px] py-2 text-sm font-semibold text-white transition hover:bg-primary-dark"
+        <div className="hidden md:block">
+          <motion.button
+            onClick={() => scrollTo('cta')}
+            initial={{ opacity: shouldReduceMotion ? 1 : 0, scale: shouldReduceMotion ? 1 : 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.4, delay: 0.3, type: 'spring', stiffness: 300, damping: 20 }}
+            whileHover={shouldReduceMotion ? {} : { scale: 1.05 }}
+            whileTap={shouldReduceMotion ? {} : { scale: 0.95 }}
+            className="rounded-md bg-primary px-[18px] py-2 text-sm font-semibold text-white transition hover:bg-primary-dark"
+          >
+            Enroll now
+          </motion.button>
+        </div>
+
+        <button
+          type="button"
+          onClick={() => setMobileOpen((prev) => !prev)}
+          aria-label="Toggle menu"
+          aria-expanded={mobileOpen}
+          className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-md md:hidden"
         >
-          Enroll now
-        </motion.button>
+          <motion.span
+            animate={mobileOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
+            className="block h-0.5 w-6 bg-text-primary"
+          />
+          <motion.span
+            animate={mobileOpen ? { opacity: 0 } : { opacity: 1 }}
+            className="block h-0.5 w-6 bg-text-primary"
+          />
+          <motion.span
+            animate={mobileOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
+            className="block h-0.5 w-6 bg-text-primary"
+          />
+        </button>
       </div>
+
+      <AnimatePresence initial={false}>
+        {mobileOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.25, ease: 'easeOut' }}
+            className="overflow-hidden border-b border-border bg-bg-light md:hidden"
+          >
+            <div className="flex flex-col gap-4 px-6 py-5">
+              {navLinks.map((label) => (
+                <button
+                  key={label}
+                  type="button"
+                  onClick={() => {
+                    scrollTo(label)
+                    setMobileOpen(false)
+                  }}
+                  className="text-left text-base font-medium text-text-secondary transition hover:text-text-primary"
+                >
+                  {label}
+                </button>
+              ))}
+              <button
+                type="button"
+                onClick={() => {
+                  scrollTo('cta')
+                  setMobileOpen(false)
+                }}
+                className="mt-2 rounded-md bg-primary px-[18px] py-2.5 text-center text-sm font-semibold text-white transition hover:bg-primary-dark"
+              >
+                Enroll now
+              </button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.nav>
   )
 }
