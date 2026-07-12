@@ -2,31 +2,31 @@ import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useReducedMotion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import AnimatedSection from '../components/AnimatedSection'
 
 gsap.registerPlugin(ScrollTrigger)
 
-const rows = [
-  { week: '1', dates: '01–02 Aug', phase: 'Course 01 · React', phaseColor: 'bg-callout-bg text-primary', title: 'React Fundamentals', desc: 'How Rendering Works: JSX, components, props, controlled forms & TypeScript · build a product card' },
-  { week: '2', dates: '08–09 Aug', phase: 'Course 01 · React', phaseColor: 'bg-callout-bg text-primary', title: 'Hooks', desc: 'State & Side Effects: useState, useEffect, custom hooks & first tests · build a live search box' },
-  { week: '3', dates: '15–16 Aug', phase: 'Course 01 · React', phaseColor: 'bg-callout-bg text-primary', title: 'Bigger State — Reducers & Context', desc: 'useReducer, Context & re-render traps · build a cart with a global badge' },
-  { week: '4', dates: '22–23 Aug', phase: 'Course 01 · React', phaseColor: 'bg-callout-bg text-primary', title: 'Loading States Done Right — Suspense', desc: 'Declarative loading & useTransition · build a profile with skeleton loaders' },
-  { week: '5', dates: '29–30 Aug', phase: 'Course 01 · React', phaseColor: 'bg-callout-bg text-primary', title: 'Reusable Component Patterns', desc: 'Compound components & render props · build a Modal/Dialog family' },
-  { week: '6', dates: '05–06 Sep', phase: 'Course 01 · React', phaseColor: 'bg-callout-bg text-primary', title: 'Performance & Optimization', desc: 'Profile first, React 19 Compiler, virtualization · build an infinite feed' },
-  { week: '7', dates: '12–13 Sep', phase: 'Course 01 · React', phaseColor: 'bg-callout-bg text-primary', title: 'React Server Components (RSC)', desc: 'Server vs Client, Server Actions · build a blog post + comment form' },
-  { week: '8', dates: '19–20 Sep', phase: 'Course 01 · React', phaseColor: 'bg-callout-bg text-primary', title: 'Backend Without a Backend — Supabase & BaaS', desc: 'Auth, Postgres, storage & Row-Level Security · give your app real accounts & data' },
-  { week: '9', dates: '26–27 Sep', phase: 'Course 01 · React', phaseColor: 'bg-callout-bg text-primary', title: 'Shipping It — Production Essentials', desc: 'Testing, Core Web Vitals, a11y & security · ship a hardened login form' },
-  { week: '10', dates: '03–04 Oct', phase: 'Course 02 · AI Coding', phaseColor: 'bg-blue-100 text-accent-blue', title: 'AI On-Ramp + How Agents Work', desc: 'Prompting, reviewing AI output, context budgets · pick your own project' },
-  { week: '11', dates: '10–11 Oct', phase: 'Course 02 · AI Coding', phaseColor: 'bg-blue-100 text-accent-blue', title: 'Consistency → Slicing → Spec-Driven Dev', desc: 'AGENTS.md, vertical slicing, plan mode & CI guardrails · spec a real feature' },
-  { week: '12', dates: '17–18 Oct', phase: 'Capstone · Group Build', phaseColor: 'bg-amber-100 text-amber-700', title: 'Group Build — Week 1', desc: 'Drive your own full-stack project feature-by-feature through a full agent workflow' },
-  { week: '13', dates: '24–25 Oct', phase: 'Capstone · Group Build', phaseColor: 'bg-amber-100 text-amber-700', title: 'Group Build — Week 2 + Demo', desc: 'Harden, test & ship, then present your finished app on demo day' },
-  { week: '14', dates: '31 Oct–01 Nov', phase: 'Bonus · Career Launch', phaseColor: 'bg-amber-500/15 text-amber-700', title: 'Getting Hired — Career Launch', desc: 'CV, LinkedIn, live portfolio, freelancing basics & interview prep — package your capstone for the job hunt', bonus: true },
-]
+const phaseColorMap: Record<string, string> = {
+  'Course 01 · React': 'bg-callout-bg text-primary',
+  'Course 02 · AI Coding': 'bg-blue-100 text-accent-blue',
+  'Capstone · Group Build': 'bg-amber-100 text-amber-700',
+  'Bonus · Career Launch': 'bg-amber-500/15 text-amber-700',
+}
 
 export default function Timeline() {
+  const { t } = useTranslation()
   const tableRef = useRef<HTMLDivElement>(null)
   const rowRefs = useRef<(HTMLDivElement | null)[]>([])
   const shouldReduceMotion = useReducedMotion()
+
+  const rows = t('timeline.rows', { returnObjects: true }) as Array<{
+    week: string
+    dates: string
+    phase: string
+    title: string
+    desc: string
+  }>
 
   useEffect(() => {
     if (shouldReduceMotion) return
@@ -59,44 +59,35 @@ export default function Timeline() {
       <div className="mx-auto flex max-w-[1440px] flex-col gap-8 px-6 py-16 lg:px-[120px] lg:py-24">
         <AnimatedSection className="flex max-w-[900px] flex-col gap-4">
           <p className="font-mono text-sm font-semibold uppercase tracking-[1px] text-primary">
-            THE 14-WEEK TIMELINE
+            {t('timeline.heading')}
           </p>
           <h2 className="text-3xl font-bold tracking-tight text-text-primary lg:text-[36px]">
-            Fourteen weeks, one weekend at a time.
+            {t('timeline.title')}
           </h2>
           <p className="max-w-[720px] text-[17px] leading-relaxed text-text-secondary">
-            Nine weeks to build production React with a real Supabase backend, two to work with AI
-            agents, a two-week group build, then one bonus week to launch your career.
+            {t('timeline.description')}
           </p>
         </AnimatedSection>
 
         <AnimatedSection delay={0.1}>
           <div className="w-fit rounded-full border border-border bg-bg-light px-4 py-2 text-sm text-text-primary">
-            Starts Sat 1 Aug 2026 · 14 weeks · 6 hrs/week · Sat & Sun · 3 hrs/day
+            {t('timeline.scheduleInfo')}
           </div>
         </AnimatedSection>
 
         <div ref={tableRef} className="overflow-hidden rounded-lg border border-border bg-bg-light">
           <div className="hidden grid-cols-[60px_140px_200px_1fr] gap-4 px-6 py-4 text-xs font-semibold uppercase tracking-wide text-text-secondary lg:grid">
-            <span>Week</span>
-            <span>Dates</span>
-            <span>Phase</span>
-            <span>Focus</span>
+            <span>{t('timeline.weekHeader')}</span>
+            <span>{t('timeline.datesHeader')}</span>
+            <span>{t('timeline.phaseHeader')}</span>
+            <span>{t('timeline.focusHeader')}</span>
           </div>
 
           <div className="hidden h-px bg-border lg:block" />
 
-          {/* Bonus separator */}
-          <div className="hidden items-center gap-3 px-6 py-2 lg:flex">
-            <div className="h-px flex-1 bg-gradient-to-r from-amber-300 via-amber-200 to-transparent" />
-            <span className="flex items-center gap-1.5 rounded-full bg-amber-500/10 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-amber-600">
-              <span>🎁</span> Bonus Track
-            </span>
-            <div className="h-px flex-1 bg-gradient-to-l from-amber-300 via-amber-200 to-transparent" />
-          </div>
-
           {rows.map((row, idx) => {
-            const isBonus = 'bonus' in row && row.bonus
+            const isBonus = row.phase === 'Bonus · Career Launch'
+            const phaseColor = phaseColorMap[row.phase] ?? 'bg-callout-bg text-primary'
 
             return (
               <div
@@ -111,7 +102,7 @@ export default function Timeline() {
                 {/* Mobile */}
                 <div className="flex flex-col gap-3 p-5 lg:hidden">
                   <div className="flex items-center justify-between gap-3">
-                    <span className={`w-fit rounded-full px-2.5 py-1 text-xs font-semibold ${row.phaseColor}`}>
+                    <span className={`w-fit rounded-full px-2.5 py-1 text-xs font-semibold ${phaseColor}`}>
                       {isBonus && <span className="mr-1">🎁</span>}
                       {row.phase}
                     </span>
@@ -141,7 +132,7 @@ export default function Timeline() {
                   </span>
                 </span>
                 <span className="hidden text-sm text-text-secondary lg:block">{row.dates}</span>
-                <span className={`hidden w-fit rounded-full px-2.5 py-1 text-xs font-semibold lg:block ${row.phaseColor}`}>
+                <span className={`hidden w-fit rounded-full px-2.5 py-1 text-xs font-semibold lg:block ${phaseColor}`}>
                   {isBonus && <span className="mr-1">🎁</span>}
                   {row.phase}
                 </span>

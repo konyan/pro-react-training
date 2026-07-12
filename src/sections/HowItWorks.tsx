@@ -1,38 +1,39 @@
 import { motion, useReducedMotion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import AnimatedSection from '../components/AnimatedSection'
 import AnimatedCard from '../components/AnimatedCard'
-import { stepThreeDeliverable } from './data'
-
-const steps = [
-  {
-    number: '1',
-    title: 'Build & ship it',
-    body: 'In Course 01 you create a working React app with clean components and solid state, add a real Supabase backend for accounts and data, then make it production-ready: tested, audited with Lighthouse, accessible, and secure.',
-  },
-  {
-    number: '2',
-    title: 'Extend it with AI',
-    body: 'In Course 02 you add a new feature entirely through an agent workflow, landing it as a clean pull request with a spec and passing tests.',
-  },
-  {
-    number: '3',
-    title: 'Get hired with it',
-    body: stepThreeDeliverable,
-  },
-]
 
 export default function HowItWorks() {
+  const { t } = useTranslation()
   const shouldReduceMotion = useReducedMotion()
+
+  const steps = [
+    {
+      number: '1',
+      title: t('howItWorks.step1.title'),
+      body: t('howItWorks.step1.body'),
+    },
+    {
+      number: '2',
+      title: t('howItWorks.step2.title'),
+      body: t('howItWorks.step2.body'),
+    },
+    {
+      number: '3',
+      title: t('howItWorks.step3.title'),
+      body: t('howItWorks.step3.body'),
+    },
+  ]
 
   return (
     <section className="bg-bg-light">
       <div className="mx-auto flex max-w-[1440px] flex-col gap-12 px-6 py-16 lg:gap-16 lg:px-[120px] lg:py-24">
         <AnimatedSection className="flex max-w-[900px] flex-col gap-4">
           <p className="font-mono text-sm font-semibold uppercase tracking-[2px] text-primary">
-            HOW IT WORKS
+            {t('howItWorks.heading')}
           </p>
           <h2 className="text-3xl font-bold tracking-tight text-text-primary lg:text-[40px]">
-            One project carries you the whole way through — including your job hunt.
+            {t('howItWorks.title')}
           </h2>
         </AnimatedSection>
 
@@ -73,11 +74,10 @@ export default function HowItWorks() {
           </motion.div>
           <div className="flex flex-col gap-2">
             <h3 className="text-xl font-bold text-text-primary">
-              Capstone project — You finish with a real product in your portfolio.
+              {t('howItWorks.capstone.title')}
             </h3>
             <p className="text-[15px] leading-relaxed text-text-primary">
-              Not toy exercises — one genuine application you build, harden, and extend across both
-              courses. Exactly the kind of work that gets you hired or promoted.
+              {t('howItWorks.capstone.body')}
             </p>
           </div>
         </motion.div>

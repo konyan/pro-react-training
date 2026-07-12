@@ -1,6 +1,8 @@
 import { motion, useReducedMotion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 
 export default function Footer() {
+  const { t } = useTranslation()
   const shouldReduceMotion = useReducedMotion()
 
   return (
@@ -17,12 +19,11 @@ export default function Footer() {
           transition={{ type: 'spring', stiffness: 400, damping: 17 }}
           className="font-mono text-sm font-semibold text-primary"
         >
-          The Frontend Path
+          {t('footer.brand')}
         </motion.span>
         <div className="hidden h-px flex-1 bg-border-dark lg:block" />
         <p className="text-center text-sm text-text-tertiary lg:text-right">
-          © 2026 Nyan Lin Tun. Production-Grade React & AI Coding — a hands-on path for junior & mid
-          developers.
+          {t('footer.copyright')}
         </p>
       </div>
     </motion.footer>

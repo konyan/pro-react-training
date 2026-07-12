@@ -1,11 +1,19 @@
 import { motion, useReducedMotion, AnimatePresence } from 'framer-motion'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
-const navLinks = ['Curriculum', 'Timeline', 'Instructor', 'Details']
+const navLinkKeys = ['curriculum', 'timeline', 'instructor', 'details'] as const
 
 export default function Navbar() {
+  const { t, i18n } = useTranslation()
   const shouldReduceMotion = useReducedMotion()
   const [mobileOpen, setMobileOpen] = useState(false)
+
+  const currentLang = i18n.language === 'en' ? 'en' : 'my'
+
+  const toggleLanguage = () => {
+    i18n.changeLanguage(currentLang === 'en' ? 'my' : 'en')
+  }
 
   const scrollTo = (id: string) => {
     const el = document.getElementById(id.toLowerCase())
@@ -30,22 +38,34 @@ export default function Navbar() {
         </motion.div>
 
         <div className="hidden items-center gap-9 md:flex">
-          {navLinks.map((label, i) => (
+          {navLinkKeys.map((key, i) => (
             <motion.button
-              key={label}
-              onClick={() => scrollTo(label)}
+              key={key}
+              onClick={() => scrollTo(key)}
               initial={{ opacity: shouldReduceMotion ? 1 : 0, y: shouldReduceMotion ? 0 : -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.1 + i * 0.05 }}
               whileHover={shouldReduceMotion ? {} : { y: -1 }}
               className="text-sm font-medium text-text-secondary transition hover:text-text-primary"
             >
-              {label}
+              {t(`nav.${key}`)}
             </motion.button>
           ))}
         </div>
 
-        <div className="hidden md:block">
+        <div className="hidden items-center gap-3 md:flex">
+          <motion.button
+            onClick={toggleLanguage}
+            initial={{ opacity: shouldReduceMotion ? 1 : 0, scale: shouldReduceMotion ? 1 : 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.4, delay: 0.25 }}
+            whileHover={shouldReduceMotion ? {} : { scale: 1.05 }}
+            whileTap={shouldReduceMotion ? {} : { scale: 0.95 }}
+            className="rounded-md border border-border px-3 py-2 text-sm font-semibold text-text-secondary transition hover:border-primary hover:text-primary"
+          >
+            {currentLang === 'en' ? 'MY' : 'EN'}
+          </motion.button>
+
           <motion.button
             onClick={() => scrollTo('cta')}
             initial={{ opacity: shouldReduceMotion ? 1 : 0, scale: shouldReduceMotion ? 1 : 0.9 }}
@@ -55,14 +75,14 @@ export default function Navbar() {
             whileTap={shouldReduceMotion ? {} : { scale: 0.95 }}
             className="rounded-md bg-primary px-[18px] py-2 text-sm font-semibold text-white transition hover:bg-primary-dark"
           >
-            Enroll now
+            {t('nav.enrollNow')}
           </motion.button>
         </div>
 
         <button
           type="button"
           onClick={() => setMobileOpen((prev) => !prev)}
-          aria-label="Toggle menu"
+          aria-label={t('nav.toggleMenu')}
           aria-expanded={mobileOpen}
           className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-md md:hidden"
         >
@@ -91,29 +111,38 @@ export default function Navbar() {
             className="overflow-hidden border-b border-border bg-bg-light md:hidden"
           >
             <div className="flex flex-col gap-4 px-6 py-5">
-              {navLinks.map((label) => (
+              {navLinkKeys.map((key) => (
                 <button
-                  key={label}
+                  key={key}
                   type="button"
                   onClick={() => {
-                    scrollTo(label)
+                    scrollTo(key)
                     setMobileOpen(false)
                   }}
                   className="text-left text-base font-medium text-text-secondary transition hover:text-text-primary"
                 >
-                  {label}
+                  {t(`nav.${key}`)}
                 </button>
               ))}
-              <button
-                type="button"
-                onClick={() => {
-                  scrollTo('cta')
-                  setMobileOpen(false)
-                }}
-                className="mt-2 rounded-md bg-primary px-[18px] py-2.5 text-center text-sm font-semibold text-white transition hover:bg-primary-dark"
-              >
-                Enroll now
-              </button>
+              <div className="flex items-center gap-3">
+                <button
+                  type="button"
+                  onClick={toggleLanguage}
+                  className="rounded-md border border-border px-4 py-2.5 text-center text-sm font-semibold text-text-secondary transition hover:border-primary hover:text-primary"
+                >
+                  {currentLang === 'en' ? 'MY' : 'EN'}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    scrollTo('cta')
+                    setMobileOpen(false)
+                  }}
+                  className="flex-1 rounded-md bg-primary px-[18px] py-2.5 text-center text-sm font-semibold text-white transition hover:bg-primary-dark"
+                >
+                  {t('nav.enrollNow')}
+                </button>
+              </div>
             </div>
           </motion.div>
         )}

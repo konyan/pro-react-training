@@ -1,5 +1,6 @@
 import { motion, useReducedMotion } from 'framer-motion'
 import { useEffect, useMemo, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import AnimatedButton from '../components/AnimatedButton'
 import StaggerContainer, { StaggerItem } from '../components/StaggerContainer'
 
@@ -103,6 +104,7 @@ function useTypewriterCode(lines: typeof codeLines, startDelay = 600) {
 }
 
 export default function Hero() {
+  const { t } = useTranslation()
   const shouldReduceMotion = useReducedMotion()
   const { chars, visibleCount } = useTypewriterCode(codeLines)
   const activeLine =
@@ -116,38 +118,38 @@ export default function Hero() {
           <StaggerItem>
             <div className="flex items-center gap-2.5 rounded-full bg-callout-bg px-3.5 py-1.5">
               <span className="h-2 w-2 rounded-full bg-primary" />
-              <span className="text-sm font-semibold text-primary">Now enrolling · Junior & Mid developers</span>
+              <span className="text-sm font-semibold text-primary">{t('hero.badge')}</span>
             </div>
           </StaggerItem>
 
           <StaggerItem>
             <p className="font-mono text-sm font-medium uppercase tracking-[2px] text-text-secondary">
-              THE FRONTEND PATH · 2026
+              {t('hero.subtitle')}
             </p>
           </StaggerItem>
 
           <StaggerItem>
             <h1 className="text-3xl font-bold leading-[1.1] tracking-tight text-text-primary lg:text-[56px]">
-              Toy apps to real products — the React path.
+              {t('hero.title')}
             </h1>
           </StaggerItem>
 
           <StaggerItem>
             <p className="max-w-[640px] text-base leading-relaxed text-text-secondary lg:text-lg">
-              A hands-on, two-course path that teaches modern React deeply all the way to a tested, production-ready full-stack app you build solo, with real accounts, a database and storage powered by a Backend-as-a-Service (Supabase, with Firebase awareness), then shows you how to build software with AI agents the way senior engineers actually work in 2026.
+              {t('hero.description')}
             </p>
           </StaggerItem>
 
           <StaggerItem>
             <div className="flex flex-wrap gap-6">
               <div className="flex items-center gap-2 text-sm font-medium text-text-primary">
-                <span>⚡</span> 13 weeks · 6 hrs/week
+                <span>⚡</span> {t('hero.weeksInfo')}
               </div>
               <div className="flex items-center gap-2 text-sm font-medium text-text-primary">
-                <span>💻</span> Live online + OJT mentoring
+                <span>💻</span> {t('hero.formatInfo')}
               </div>
               <div className="flex items-center gap-2 text-sm font-medium text-text-primary">
-                <span>🚀</span> Starts Aug 2026
+                <span>🚀</span> {t('hero.startDate')}
               </div>
             </div>
           </StaggerItem>
@@ -155,10 +157,10 @@ export default function Hero() {
           <StaggerItem>
             <div className="flex flex-wrap gap-3">
               <AnimatedButton variant="primary" className="gap-2 px-5 py-3 text-[15px]">
-                Message me to join <span>→</span>
+                {t('hero.ctaPrimary')} <span>→</span>
               </AnimatedButton>
               <AnimatedButton variant="secondary" className="px-5 py-3 text-[15px]">
-                See the curriculum
+                {t('hero.ctaSecondary')}
               </AnimatedButton>
             </div>
           </StaggerItem>

@@ -1,0 +1,338 @@
+{
+  "nav": {
+    "curriculum": "သင်ရိုးညွှန်းတမ်း",
+    "timeline": "အချိန်ဇယား",
+    "instructor": "ဆရာ",
+    "details": "အသေးစိတ်",
+    "enrollNow": "စာရင်းသွင်းမည်",
+    "toggleMenu": "မီနူးဖွင့်/ပိတ်"
+  },
+  "hero": {
+    "badge": "ယခု စာရင်းသွင်းနိုင်ပါပြီ · Junior & Mid developers",
+    "subtitle": "THE FRONTEND PATH · 2026",
+    "title": "Toy apps မှ real products သို့ — React လမ်းကြောင်း။",
+    "description": "ခေတ်မီ React ကို အနက်ရှိုင်းဆုံး သင်ယူနိုင်သော hands-on လမ်းကြောင်းနှစ်ခုပါ။ tested, production-ready full-stack app ကို သင်ကိုယ်တိုင် တည်ဆောက်ပြီး real accounts, database နှင့် storage (Supabase, Firebase awareness) ပါဝင်ကာ 2026 ခုနှစ်တွင် senior engineer များ အမှန်တကယ် အလုပ်လုပ်သည့်အတိုင်း AI agents များဖြင့် software တည်ဆောက်နည်းကိုပါ သင်ပေးပါသည်။",
+    "weeksInfo": "၁၄ ပတ် · တစ်ပတ်လျှင် ၆ နာရီ",
+    "formatInfo": "Live online + OJT mentoring",
+    "startDate": "2026 ခုနှစ် သြဂုတ်လ စတင်မည်",
+    "ctaPrimary": "ပါဝင်ရန် message ပို့မည်",
+    "ctaSecondary": "သင်ရိုးညွှန်းတမ်း ကြည့်မည်"
+  },
+  "curriculum": {
+    "heading": "သင်ရိုးညွှန်းတမ်း",
+    "title": "Course နှစ်ခု + bonus track။ အားလုံး တစ်ခုနှင့်တစ်ခု ချိတ်ဆက်ထားပါသည်။",
+    "description": "Course တစ်ခုစီတွင် concept ကို နားလည်ခြင်း၊ live တည်ဆောက်သည်ကို ကြည့်ခြင်း၊ ကိုယ်တိုင် တည်ဆောက်ခြင်း၊ checkpoint ဖြေဆိုခြင်း ဟူသော ပုံစံအတိုင်း သင်ယူပါသည်။ Bonus track တွင် အလုပ်ရှာဖွေရေးအတွက် အားလုံးကို ပြင်ဆင်ပေးပါသည်။",
+    "courseOne": {
+      "label": "Course 01",
+      "title": "Production-Grade React",
+      "description": "React ကို အနက်ရှိုင်းဆုံး သင်ယူကာ tested, shippable full-stack app အထိ တည်ဆောက်ပါ။",
+      "bullets": [
+        "Rendering, JSX & components",
+        "Hooks, state & side effects",
+        "Context, reducers & Suspense",
+        "Reusable patterns & performance",
+        "Server Components (RSC)",
+        "Supabase backend — auth, database & storage",
+        "Testing, Core Web Vitals, a11y & security"
+      ],
+      "outcome": "Real full-stack app ကို တည်ဆောက်ပြီး ship နိုင်စွမ်း ရရှိပါမည်။"
+    },
+    "courseTwo": {
+      "label": "Course 02",
+      "title": "Planned AI Coding",
+      "description": "Senior engineer များ လုပ်ဆောင်သည့်အတိုင်း AI agents များဖြင့် software တည်ဆောက်ပါ — planned, reviewed, clean။",
+      "bullets": [
+        "AI coding အခြေခံ & prompting",
+        "AI output ကို review & testing လုပ်ခြင်း",
+        "Agent များ အလုပ်လုပ်ပုံ & context budgets",
+        "Agent setup & AGENTS.md",
+        "Spec-driven development",
+        "Automated, guarded pipelines"
+      ],
+      "outcome": "Agent များဖြင့် ပိုမြန်မြန် ship နိုင်စွမ်း ရရှိပါမည်။"
+    },
+    "bonus": {
+      "label": "🎁 Bonus Track",
+      "sublabel": "Career Launch",
+      "title": "Getting Hired — အလုပ်ရခြင်း",
+      "description": "သင်၏ capstone ကို real world အတွက် ပြင်ဆင်ပါ — CV, portfolio, LinkedIn, interviews။ Module တစ်ခုစီတွင် သင်တည်ဆောက်ပြီးသား app ကို ပြန်သုံးသော deliverable ပါရှိပါသည်။",
+      "bullets": [
+        "Target ကို သိခြင်း — အလုပ်ရှင်များ ဘာကို ငှားသလဲ",
+        "Capstone ဖြင့် ဦးဆောင်သော one-page CV",
+        "ရောင်းနိုင်သော LinkedIn profile",
+        "Live portfolio + case study",
+        "Freelancing & ပထမ client များ",
+        "Interviews & offer ရယူခြင်း"
+      ],
+      "outcome": "Job-ready portfolio, CV နှင့် interview prep ပါရှိပါမည်။"
+    }
+  },
+  "howItWorks": {
+    "heading": "ဘယ်လို အလုပ်လုပ်သလဲ",
+    "title": "Project တစ်ခုတည်းဖြင့် အစမှအဆင့်အထိ — အလုပ်ရှာဖွေရေးအထိ ပါဝင်ပါသည်။",
+    "step1": {
+      "title": "တည်ဆောက်ပြီး ship မည်",
+      "body": "Course 01 တွင် clean components နှင့် solid state ပါသော working React app ကို ဖန်တီးကာ real Supabase backend ဖြင့် accounts နှင့် data ကို ထည့်သွင်းပြီး production-ready — tested, Lighthouse ဖြင့် audited, accessible, secure — ဖြစ်အောင် လုပ်ပါမည်။"
+    },
+    "step2": {
+      "title": "AI ဖြင့် extend လုပ်မည်",
+      "body": "Course 02 တွင် agent workflow မှတဆင့် feature အသစ်တစ်ခု ထည့်သွင်းကာ spec နှင့် passing tests ပါသော clean pull request အဖြစ် landing ပါမည်။"
+    },
+    "step3": {
+      "title": "ဒါနဲ့ အလုပ်ရမည်",
+      "body": "Bonus track တွင် သင်၏ capstone ကို real world အတွက် package လုပ်ပါမည် — project ဖြင့် ဦးဆောင်သော one-page CV ရေးခြင်း၊ ရှာဖွေတွေ့ရှိနိုင်သော LinkedIn profile ပြုလုပ်ခြင်း၊ portfolio site နှင့် case study ဖြင့် live deploy လုပ်ခြင်း၊ freelance client များ ရယူခြင်း သို့မဟုတ် interview များ အောင်မြင်ခြင်း — အားလုံးကို သင်တည်ဆောက်ပြီးသား app ဖြင့် လုပ်ဆောင်ပါမည်။"
+    },
+    "capstone": {
+      "title": "Capstone project — သင်၏ portfolio တွင် real product ပါရှိပါမည်။",
+      "body": "Toy exercises မဟုတ်ပါ — course နှစ်ခုလုံးတွင် တည်ဆောက်၊ harden၊ extend လုပ်သော genuine application တစ်ခု။ အလုပ်ရခြင်း သို့မဟုတ် promotion ရခြင်းအတွက် အတိအကျ လိုအပ်သော အမျိုးအစားဖြစ်ပါသည်။"
+    }
+  },
+  "toolkit": {
+    "heading": "ကိရိယာများ",
+    "title": "သင် အမှန်တကယ် သုံးရမည့် tools များ။",
+    "description": "Senior engineer များ နေ့စဉ် သုံးသော editor, AI agents, design နှင့် shipping stack အတူတူပါပဲ။ Course ပြီးဆုံးချိန်တွင် အားလုံးကို သက်တောင့်သက်သာ သုံးနိုင်ပါမည်။",
+    "codeEditor": "Code & AI editor",
+    "designHandoff": "Design & handoff",
+    "frontendStack": "Frontend stack",
+    "backendBaas": "Backend / BaaS",
+    "testingQuality": "Testing & quality",
+    "shipCollaborate": "Ship & collaborate",
+    "toolsCount": "{{count}} ခု"
+  },
+  "timeline": {
+    "heading": "၁၄ ပတ် အချိန်ဇယား",
+    "title": "၁၄ ပတ်၊ တစ်ပတ်လျှင် weekend တစ်ကြိမ်။",
+    "description": "၉ ပတ် — production React + Supabase backend၊ ၂ ပတ် — AI agents ဖြင့် အလုပ်လုပ်ခြင်း၊ ၂ ပတ် — group build၊ ၁ ပတ် — career launch bonus။",
+    "scheduleInfo": "2026 သြဂုတ် ၁ ရက် စနေနေ့ စတင် · ၁၄ ပတ် · တစ်ပတ်လျှင် ၆ နာရီ · စနေ/တနင်္ဂနွေ · တစ်နေ့လျှင် ၃ နာရီ",
+    "weekHeader": "ပတ်",
+    "datesHeader": "ရက်စွဲ",
+    "phaseHeader": "Phase",
+    "focusHeader": "အကြောင်းအရာ",
+    "rows": [
+      {
+        "week": "၁",
+        "dates": "သြဂုတ် ၀၁–၀၂",
+        "phase": "Course 01 · React",
+        "title": "React Fundamentals",
+        "desc": "Rendering အလုပ်လုပ်ပုံ: JSX, components, props, controlled forms & TypeScript · product card တည်ဆောက်ခြင်း"
+      },
+      {
+        "week": "၂",
+        "dates": "သြဂုတ် ၀၈–၀၉",
+        "phase": "Course 01 · React",
+        "title": "Hooks",
+        "desc": "State & Side Effects: useState, useEffect, custom hooks & first tests · live search box တည်ဆောက်ခြင်း"
+      },
+      {
+        "week": "၃",
+        "dates": "သြဂုတ် ၁၅–၁၆",
+        "phase": "Course 01 · React",
+        "title": "Bigger State — Reducers & Context",
+        "desc": "useReducer, Context & re-render traps · global badge ပါသော cart တည်ဆောက်ခြင်း"
+      },
+      {
+        "week": "၄",
+        "dates": "သြဂုတ် ၂၂–၂၃",
+        "phase": "Course 01 · React",
+        "title": "Loading States Done Right — Suspense",
+        "desc": "Declarative loading & useTransition · skeleton loaders ပါသော profile တည်ဆောက်ခြင်း"
+      },
+      {
+        "week": "၅",
+        "dates": "သြဂုတ် ၂၉–၃၀",
+        "phase": "Course 01 · React",
+        "title": "Reusable Component Patterns",
+        "desc": "Compound components & render props · Modal/Dialog family တည်ဆောက်ခြင်း"
+      },
+      {
+        "week": "၆",
+        "dates": "စက်တင်ဘာ ၀၅–၀၆",
+        "phase": "Course 01 · React",
+        "title": "Performance & Optimization",
+        "desc": "Profile first, React 19 Compiler, virtualization · infinite feed တည်ဆောက်ခြင်း"
+      },
+      {
+        "week": "၇",
+        "dates": "စက်တင်ဘာ ၁၂–၁၃",
+        "phase": "Course 01 · React",
+        "title": "React Server Components (RSC)",
+        "desc": "Server vs Client, Server Actions · blog post + comment form တည်ဆောက်ခြင်း"
+      },
+      {
+        "week": "၈",
+        "dates": "စက်တင်ဘာ ၁၉–၂၀",
+        "phase": "Course 01 · React",
+        "title": "Backend Without a Backend — Supabase & BaaS",
+        "desc": "Auth, Postgres, storage & Row-Level Security · သင့် app တွင် real accounts & data ထည့်သွင်းခြင်း"
+      },
+      {
+        "week": "၉",
+        "dates": "စက်တင်ဘာ ၂၆–၂၇",
+        "phase": "Course 01 · React",
+        "title": "Shipping It — Production Essentials",
+        "desc": "Testing, Core Web Vitals, a11y & security · hardened login form ship လုပ်ခြင်း"
+      },
+      {
+        "week": "၁၀",
+        "dates": "အောက်တိုဘာ ၀၃–၀၄",
+        "phase": "Course 02 · AI Coding",
+        "title": "AI On-Ramp + How Agents Work",
+        "desc": "Prompting, AI output review, context budgets · ကိုယ်ပိုင် project ရွေးချယ်ခြင်း"
+      },
+      {
+        "week": "၁၁",
+        "dates": "အောက်တိုဘာ ၁၀–၁၁",
+        "phase": "Course 02 · AI Coding",
+        "title": "Consistency → Slicing → Spec-Driven Dev",
+        "desc": "AGENTS.md, vertical slicing, plan mode & CI guardrails · real feature spec ရေးခြင်း"
+      },
+      {
+        "week": "၁၂",
+        "dates": "အောက်တိုဘာ ၁၇–၁၈",
+        "phase": "Capstone · Group Build",
+        "title": "Group Build — ပထမပတ်",
+        "desc": "Full agent workflow ဖြင့် သင့်ကိုယ်ပိုင် full-stack project ကို feature-by-feature drive လုပ်ခြင်း"
+      },
+      {
+        "week": "၁၃",
+        "dates": "အောက်တိုဘာ ၂၄–၂၅",
+        "phase": "Capstone · Group Build",
+        "title": "Group Build — ဒုတိယပတ် + Demo",
+        "desc": "Harden, test & ship လုပ်ပြီး demo day တွင် သင့် app ကို present လုပ်ခြင်း"
+      },
+      {
+        "week": "၁၄",
+        "dates": "အောက်တိုဘာ ၃၁–နိုဝင်ဘာ ၀၁",
+        "phase": "Bonus · Career Launch",
+        "title": "Getting Hired — Career Launch",
+        "desc": "CV, LinkedIn, live portfolio, freelancing basics & interview prep — သင့် capstone ကို job hunt အတွက် package လုပ်ခြင်း"
+      }
+    ]
+  },
+  "details": {
+    "heading": "အသေးစိတ်",
+    "title": "မစာရင်းသွင်းမီ သိထားသင့်သည့်အချက်များ။",
+    "schedule": {
+      "title": "အချိန်ဇယား & ကြာချိန်",
+      "desc": "၁၄ ပတ် · တစ်ပတ်လျှင် ၆ နာရီ — စနေနှင့် တနင်္ဂနွေ၊ တစ်နေ့လျှင် ၃ နာရီစီ hands-on labs ပါဝင် — ၉ ပတ် React (Supabase backend အပါအဝင်)၊ ၂ ပတ် AI coding၊ ၂ ပတ် group build။ 2026 ခုနှစ် သြဂုတ်လ စတင်ပါသည်။"
+    },
+    "format": {
+      "title": "ပုံစံ",
+      "desc": "Live online classes နှင့် on-the-job (OJT) mentoring ပေါင်းစပ်ထားသည် — code ရေး၊ review ခံယူ၊ direct feedback ဖြင့် တိုးတက်ပါ။"
+    },
+    "audience": {
+      "title": "ဘယ်သူအတွက်လဲ",
+      "desc": "HTML, CSS နှင့် JavaScript ကို သက်တောင့်သက်ရှိ ရှိသော junior & mid developers များအတွက် production-grade frontend engineer ဖြစ်လိုသူများ။"
+    }
+  },
+  "instructor": {
+    "heading": "သင့်ဆရာ",
+    "title": "Ship & lead လုပ်သူထံမှ သင်ယူပါ။",
+    "name": "ဉာဏ်လင်းထွန်း",
+    "role": "Senior Full-Stack JS Developer & Project Director",
+    "bio": "8+ နှစ် web, mobile နှင့် IoT production apps များကို တည်ဆောက်ပြီး ဦးဆောင်ခဲ့ပါသည်။ Developer training programs များကို ဦးဆောင်ကာ junior dev များကို React, Next.js နှင့် agentic coding ကို real on-the-job format ဖြင့် သင်ကြားပေးပါသည် — ဤ course သည် ထိုအတွေ့အကြုံကို structured ပုံစံဖြင့် တင်ပြထားခြင်း ဖြစ်ပါသည်။"
+  },
+  "cta": {
+    "heading": "သင် အဆင်သင့်ဖြစ်ချိန်တွင်",
+    "title": "ပါဝင်ခြင်းအကြောင်း ဆွေးနွေးကြပါစို့။",
+    "description": "တစ်ဦးချင်းစီကို အနီးကပ် feedback ပေးနိုင်ရန် နေရာ အကန့်အသတ်ရှိပါသည်။ Message ပို့ပါ — developer အနေဖြင့် သင် ဘယ်မှာရှိနေသည်ကို ပြောပြပါ၊ ဤလမ်းကြောင်း သင့်အတွက် သင့်တော်မတော် ဆုံးဖြတ်ရန် ကူညီပေးပါမည်။",
+    "buttonText": "ပါဝင်ရန် Form ဖြည့်မည်"
+  },
+  "footer": {
+    "brand": "The Frontend Path",
+    "copyright": "© 2026 Nyan Lin Tun. Production-Grade React & AI Coding — junior & mid developer များအတွက် hands-on လမ်းကြောင်း။"
+  },
+  "bonus": {
+    "heading": "BONUS TRACK",
+    "title": "Getting Hired — Career Launch Bonus။",
+    "description": "Build ပြီးပြီးချင်း သင်၏ capstone fresh နေချိန်တွင် စတင်ပါသည်။ Module တစ်ခုစီတွင် သင် ship ပြီးသား app ကို ပြန်သုံးသော deliverable ပါရှိပါသည် — project အသစ် မလိုပါ။",
+    "modules": [
+      {
+        "title": "အလုပ်ရရန် ပြင်ဆင်ခြင်း",
+        "subtitle": "Target ကို သိခြင်း",
+        "bullets": [
+          "အလုပ်ရှင်များ အမှန်တကယ် ဘာကို ငှားသလဲ",
+          "Job description များကို detective ကဲ့သို့ ဖတ်ခြင်း",
+          "Full-time vs freelance — ယခု သင့်အတွက် ဘယ်လမ်းကြောင်း သင့်တော်သလဲ",
+          "သင့် one-sentence positioning line"
+        ],
+        "deliverable": "သင့် positioning line ရေးပါ: \"ကျွန်တော် [X] ကို [tech] ဖြင့် [audience] အတွက် တည်ဆောက်ပါသည်။\""
+      },
+      {
+        "title": "CV / Résumé — ဖတ်ချင်စရာ ဖြစ်အောင်",
+        "subtitle": "သင့်ကို ရောင်းပေးမည့် စာမျက်နှာတစ်ခု",
+        "bullets": [
+          "Capstone ဖြင့် ဦးဆောင်သော one-page dev CV",
+          "Action + tech + result bullet formula",
+          "ATS (applicant tracking system) ကို ကျော်လွှားခြင်း",
+          "Role အလိုက် tailor လုပ်ခြင်း — rewrite မလိုဘဲ"
+        ],
+        "deliverable": "Capstone ကို lead project အဖြစ် ထည့်သွင်းထားသော one-page CV ကို ship လုပ်ပါ။"
+      },
+      {
+        "title": "LinkedIn Profile Setup",
+        "subtitle": "ရှာဖွေတွေ့ရှိနိုင်စေ၊ ယုံကြည်စိတ်ချရစေ",
+        "bullets": [
+          "ရောင်းနိုင်သော Headline & About section",
+          "သင့် capstone ပါသော Projects section",
+          "Recruiter များ အမှန်တကယ် ရှာဖွေသော keywords",
+          "သင့် profile ကို discoverable ဖြစ်စေခြင်း"
+        ],
+        "deliverable": "Headline, About နှင့် Projects ထဲတွင် capstone ပါသော LinkedIn profile ကို publish လုပ်ပါ။"
+      },
+      {
+        "title": "Project Portfolio Setup",
+        "subtitle": "Show, don't tell",
+        "bullets": [
+          "သင့် capstone ကို live deploy လုပ်ခြင်း (Vercel / Netlify)",
+          "အားလုံးကို ချိတ်ဆက်ပေးသော portfolio site",
+          "Before/after & decisions ပါသော proper case study",
+          "Professional GitHub README",
+          "60-second demo video"
+        ],
+        "deliverable": "Live URL + portfolio site + written case study တစ်ခု publish လုပ်ပါ။"
+      },
+      {
+        "title": "Freelancing & ပထမ Client များ",
+        "subtitle": "တည်ဆောက်ခြင်းဖြင့် ငွေရခြင်း",
+        "bullets": [
+          "Freelance အလုပ် ဘယ်ကနေ လာသလဲ",
+          "Service package လုပ်ခြင်း (နာရီရောင်းခြင်း မဟုတ်)",
+          "ခန့်မှန်းခြင်း မရှိဘဲ pricing သတ်မှတ်ခြင်း",
+          "အနိုင်ရသော proposal များ ရေးခြင်း",
+          "Professional ပုံစံ deliver လုပ်ပြီး referral ရယူခြင်း",
+          "ပိုမြန်မြန် deliver ရန် AI workflow ကို သုံးခြင်း"
+        ],
+        "deliverable": "Service package page တစ်ခု ဖန်တီးပြီး ပထမဆုံး proposal ပို့ပါ။"
+      },
+      {
+        "title": "Interviews & Offer ရယူခြင်း",
+        "subtitle": "Deal ကို close လုပ်ခြင်း",
+        "bullets": [
+          "Interview flow — အမှန်တကယ် ဘာဖြစ်သလဲ",
+          "Pro ကဲ့သို့ သင့် capstone ကို walk through လုပ်ခြင်း",
+          "Common React / JS questions & ဖြေဆိုနည်း",
+          "Take-home assignments — speed vs polish",
+          "Behavioral answers (STAR method)",
+          "Negotiation basics — ငွေ မကျန်ခဲ့စေနဲ့"
+        ],
+        "deliverable": "သင့် capstone ကို ၃ မိနစ်အောက်ဖြင့် walk through လုပ်သည်ကို record လုပ်ပါ။"
+      }
+    ],
+    "addons": {
+      "title": "Optional Add-ons",
+      "label": "အပို",
+      "items": [
+        "Personal brand & content creation",
+        "ယုံကြည်စိတ်ချရမှုအတွက် open-source PR",
+        "awkward မဖြစ်သော networking",
+        "Contracts & invoicing basics"
+      ]
+    },
+    "teachingNote": {
+      "title": "Teaching Note — ပထမရက်မှ hands-on။",
+      "body": "ဤ bonus track သည် course နှစ်ခုလုံးတွင် တည်ဆောက်ခဲ့သော capstone ကို ပြန်လည် အသုံးပြုပါသည်။ Project အသစ် မလိုပါ — packaging, presenting နှင့် သင့်တွင် ရှိပြီးသားကို leverage လုပ်ခြင်းသာ ဖြစ်ပါသည်။ Build ပြီးပြီးချင်း အားလုံး fresh ဖြစ်ပြီး deployable ဖြစ်ချိန်တွင် စတင်ပါသည်။"
+    },
+    "doThisNow": "ယခု လုပ်ပါ:"
+  }
+}

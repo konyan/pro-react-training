@@ -1,4 +1,5 @@
 import { motion, useReducedMotion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import AnimatedSection from '../components/AnimatedSection'
 import StaggerContainer, { StaggerItem } from '../components/StaggerContainer'
 
@@ -6,6 +7,7 @@ const badgesRow1 = ['React', 'Next.js', 'TypeScript', 'Supabase']
 const badgesRow2 = ['Hono / Node', 'Edge / Cloudflare', 'Agentic Coding']
 
 export default function Instructor() {
+  const { t } = useTranslation()
   const shouldReduceMotion = useReducedMotion()
 
   return (
@@ -13,10 +15,10 @@ export default function Instructor() {
       <div className="mx-auto flex max-w-[1440px] flex-col gap-10 px-6 py-16 lg:gap-12 lg:px-[120px] lg:py-24">
         <AnimatedSection className="flex max-w-[900px] flex-col gap-4">
           <p className="font-mono text-sm font-semibold uppercase tracking-[1px] text-primary">
-            YOUR INSTRUCTOR
+            {t('instructor.heading')}
           </p>
           <h2 className="text-3xl font-bold tracking-tight text-text-primary lg:text-[36px]">
-            Learn from someone who ships & leads.
+            {t('instructor.title')}
           </h2>
         </AnimatedSection>
 
@@ -31,25 +33,23 @@ export default function Instructor() {
           >
             <img
               src="/konyan.webp"
-              alt="Nyan Lin Tun"
+              alt={t('instructor.name')}
               className="h-full w-full object-cover"
             />
           </motion.div>
 
           <div className="flex flex-1 flex-col gap-5">
             <AnimatedSection>
-              <h3 className="text-[28px] font-bold text-text-primary">Nyan Lin Tun</h3>
+              <h3 className="text-[28px] font-bold text-text-primary">{t('instructor.name')}</h3>
             </AnimatedSection>
             <AnimatedSection delay={0.1}>
               <p className="text-base italic text-primary">
-                Senior Full-Stack JS Developer & Project Director
+                {t('instructor.role')}
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.15}>
               <p className="text-base leading-relaxed text-text-secondary">
-                8+ years building and leading production apps across web, mobile and IoT. I run
-                developer training programs and teach junior devs React, Next.js and agentic coding
-                in a real on-the-job format — this course is that experience, structured.
+                {t('instructor.bio')}
               </p>
             </AnimatedSection>
 

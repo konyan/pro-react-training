@@ -1,37 +1,29 @@
 import { motion, useReducedMotion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import AnimatedSection from '../components/AnimatedSection'
 import AnimatedCard from '../components/AnimatedCard'
 
-const details = [
-  {
-    icon: '🗓️',
-    title: 'Schedule & duration',
-    desc: '13 weeks · 6 hrs/week — Saturday & Sunday sessions, 3 hours each day, with hands-on labs — 9 weeks of React (including a Supabase backend), 2 of AI coding, and a 2-week group build. Starts August 2026.',
-  },
-  {
-    icon: '💻',
-    title: 'Format',
-    desc: 'Live online classes combined with on-the-job (OJT) mentoring — you code, get reviewed, and improve with direct feedback.',
-  },
-  {
-    icon: '🎯',
-    title: "Who it's for",
-    desc: 'Junior & mid developers comfortable with HTML, CSS and JavaScript who want to become production-grade frontend engineers.',
-  },
-]
+const detailIcons = ['🗓️', '💻', '🎯']
 
 export default function Details() {
+  const { t } = useTranslation()
   const shouldReduceMotion = useReducedMotion()
+
+  const details = [
+    { icon: detailIcons[0], title: t('details.schedule.title'), desc: t('details.schedule.desc') },
+    { icon: detailIcons[1], title: t('details.format.title'), desc: t('details.format.desc') },
+    { icon: detailIcons[2], title: t('details.audience.title'), desc: t('details.audience.desc') },
+  ]
 
   return (
     <section id="details" className="bg-bg-light">
       <div className="mx-auto flex max-w-[1440px] flex-col gap-10 px-6 py-16 lg:gap-12 lg:px-[120px] lg:py-24">
         <AnimatedSection className="flex max-w-[900px] flex-col gap-4">
           <p className="font-mono text-sm font-semibold uppercase tracking-[1px] text-primary">
-            THE DETAILS
+            {t('details.heading')}
           </p>
           <h2 className="text-3xl font-bold tracking-tight text-text-primary lg:text-[36px]">
-            What you need to know before you join.
+            {t('details.title')}
           </h2>
         </AnimatedSection>
 
