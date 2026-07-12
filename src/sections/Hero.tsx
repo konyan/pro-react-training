@@ -129,7 +129,7 @@ export default function Hero() {
           </StaggerItem>
 
           <StaggerItem>
-            <h1 className="text-3xl font-bold leading-[1.1] tracking-tight text-text-primary lg:text-[56px]">
+            <h1 className="text-3xl font-bold leading-[1.1] tracking-tight text-text-primary lg:text-[48px] leading-[1.4]">
               {t('hero.title')}
             </h1>
           </StaggerItem>
@@ -165,7 +165,7 @@ export default function Hero() {
             </div>
           </StaggerItem>
 
-          <StaggerItem>
+          {/* <StaggerItem>
             <div className="flex flex-wrap gap-2">
               {tags.map((tag) => (
                 <motion.span
@@ -178,7 +178,7 @@ export default function Hero() {
                 </motion.span>
               ))}
             </div>
-          </StaggerItem>
+          </StaggerItem> */}
         </StaggerContainer>
 
         <motion.div

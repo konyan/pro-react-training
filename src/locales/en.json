@@ -10,7 +10,7 @@
   "hero": {
     "badge": "Now enrolling · Junior & Mid developers",
     "subtitle": "THE FRONTEND PATH · 2026",
-    "title": "Toy apps to real products — the React path.",
+    "title": "Tutorial apps to real products — that user used.",
     "description": "A hands-on, two-course path that teaches modern React deeply all the way to a tested, production-ready full-stack app you build solo, with real accounts, a database and storage powered by a Backend-as-a-Service (Supabase, with Firebase awareness), then shows you how to build software with AI agents the way senior engineers actually work in 2026.",
     "weeksInfo": "14 weeks · 6 hrs/week",
     "formatInfo": "Live online + OJT mentoring",
@@ -40,7 +40,7 @@
     "courseTwo": {
       "label": "Course 02",
       "title": "Planned AI Coding",
-      "description": "Build software with AI agents the way senior engineers do, planned, reviewed, clean.",
+      "description": "Build software with AI agents the way senior engineers do, specify, plan, tasks, implement",
       "bullets": [
         "AI coding basics & prompting",
         "Reviewing & testing AI output",
@@ -67,24 +67,25 @@
       "outcome": "You leave with a job-ready portfolio, CV, and interview prep."
     }
   },
-  "howItWorks": {
-    "heading": "HOW IT WORKS",
-    "title": "One project carries you the whole way through — including your job hunt.",
+  "howToLearn": {
+    "kicker": "HOW TO LEARN",
+    "heading": "HOW TO LEARN",
+    "title": "One project carries you the whole way — the way real products actually get built.",
     "step1": {
-      "title": "Build & ship it",
-      "body": "In Course 01 you create a working React app with clean components and solid state, add a real Supabase backend for accounts and data, then make it production-ready: tested, audited with Lighthouse, accessible, and secure."
+      "title": "Learn deep, think product",
+      "body": "You don't just learn React in isolation. Every concept — hooks, Suspense, performance, Supabase, RSC — is learned through *why it matters to the product*, not just how to call it. By the end of Course 01 you can read a feature brief and think: 'what's the right component shape, the right state model, the right backend call?'"
     },
     "step2": {
-      "title": "Extend it with AI",
-      "body": "In Course 02 you add a new feature entirely through an agent workflow, landing it as a clean pull request with a spec and passing tests."
+      "title": "Collaborate like a team",
+      "body": "Real work isn't solo. In Course 02 and the group build you work the way production teams do — taking specs from a PM, translating designs from a Figma file, discussing trade-offs, writing clean pull requests, and reviewing each other's code. The agent workflow is the same one senior engineers use to stay in sync."
     },
     "step3": {
-      "title": "Get hired with it",
-      "body": "In the Bonus track you package your capstone for the real world: write a one-page CV led by the project, set up a LinkedIn profile that gets found, deploy it live with a portfolio site and case study, then learn how to land freelance clients or ace interviews — all using the app you already built."
+      "title": "Ship something real",
+      "body": "The last step is the one that actually lands you a job or a client: you ship. Deploy the full-stack app live, write the case study, send the first proposal or application — all from the same project you built. The bonus career track just packages what you already did."
     },
     "capstone": {
-      "title": "Capstone project — You finish with a real product in your portfolio.",
-      "body": "Not toy exercises — one genuine application you build, harden, and extend across both courses. Exactly the kind of work that gets you hired or promoted."
+      "title": "One project — from idea to shipped product in your portfolio.",
+      "body": "Not toy exercises. You build a real application the way a small team does: PM-driven, design-aware, and production-hardened. That's the kind of work that gets you hired, promoted, or your first paying client."
     }
   },
   "toolkit": {
@@ -97,6 +98,7 @@
     "backendBaas": "Backend / BaaS",
     "testingQuality": "Testing & quality",
     "shipCollaborate": "Ship & collaborate",
+    "projectManagement": "Project management",
     "toolsCount": "{{count}} tools"
   },
   "timeline": {

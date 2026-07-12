@@ -52,6 +52,14 @@ const toolkitGroups = [
     chips: ['Git & GitHub', 'GitHub Actions CI', 'Vercel', 'Cloudflare'],
     chipColor: 'bg-error',
   },
+  {
+    icon: '⊞',
+    iconColor: 'text-cyan-400',
+    borderColor: 'border-cyan-400',
+    labelKey: 'toolkit.projectManagement',
+    chips: ['Trello', 'Notion', 'Discord', 'Jira'],
+    chipColor: 'bg-cyan-400',
+  },
 ]
 
 export default function Toolkit() {

@@ -2,30 +2,30 @@
   "nav": {
     "curriculum": "သင်ရိုးညွှန်းတမ်း",
     "timeline": "အချိန်ဇယား",
-    "instructor": "ဆရာ",
+    "instructor": "ဆရာ အကြောင်း",
     "details": "အသေးစိတ်",
     "enrollNow": "စာရင်းသွင်းမည်",
     "toggleMenu": "မီနူးဖွင့်/ပိတ်"
   },
   "hero": {
-    "badge": "ယခု စာရင်းသွင်းနိုင်ပါပြီ · Junior & Mid developers",
+    "badge": "ယခု စာရင်းသွင်းနိုင်ပါပြီ",
     "subtitle": "THE FRONTEND PATH · 2026",
-    "title": "Toy apps မှ real products သို့ — React လမ်းကြောင်း။",
-    "description": "ခေတ်မီ React ကို အနက်ရှိုင်းဆုံး သင်ယူနိုင်သော hands-on လမ်းကြောင်းနှစ်ခုပါ။ tested, production-ready full-stack app ကို သင်ကိုယ်တိုင် တည်ဆောက်ပြီး real accounts, database နှင့် storage (Supabase, Firebase awareness) ပါဝင်ကာ 2026 ခုနှစ်တွင် senior engineer များ အမှန်တကယ် အလုပ်လုပ်သည့်အတိုင်း AI agents များဖြင့် software တည်ဆောက်နည်းကိုပါ သင်ပေးပါသည်။",
+    "title": "တကိုယ်ရည်သုံး App မှသည် လူအများသုံးနိင်သော App တခုဖန်တီးခြင်း",
+    "description": " React နည်းပညာ ကို လက်တွေ့သင် ယူပီး, အမှန်တကယ်  ဖြန့်ချီနိင်သော Web App ကို သင်ကိုယ်တိုင် လိုက်ပါ။  AI coding အသုံးချ သင်ခန်းစာနှင့် အလုပ်အကိုင် ရှာဖွေနိင် အောင်လဲ လေ့ကျင်ပေးသွားမှာပါ။",
     "weeksInfo": "၁၄ ပတ် · တစ်ပတ်လျှင် ၆ နာရီ",
     "formatInfo": "Live online + OJT mentoring",
     "startDate": "2026 ခုနှစ် သြဂုတ်လ စတင်မည်",
-    "ctaPrimary": "ပါဝင်ရန် message ပို့မည်",
+    "ctaPrimary": "စာရင်းသွင်းမည်",
     "ctaSecondary": "သင်ရိုးညွှန်းတမ်း ကြည့်မည်"
   },
   "curriculum": {
     "heading": "သင်ရိုးညွှန်းတမ်း",
-    "title": "Course နှစ်ခု + bonus track။ အားလုံး တစ်ခုနှင့်တစ်ခု ချိတ်ဆက်ထားပါသည်။",
-    "description": "Course တစ်ခုစီတွင် concept ကို နားလည်ခြင်း၊ live တည်ဆောက်သည်ကို ကြည့်ခြင်း၊ ကိုယ်တိုင် တည်ဆောက်ခြင်း၊ checkpoint ဖြေဆိုခြင်း ဟူသော ပုံစံအတိုင်း သင်ယူပါသည်။ Bonus track တွင် အလုပ်ရှာဖွေရေးအတွက် အားလုံးကို ပြင်ဆင်ပေးပါသည်။",
+    "title": "အဓိက သင်ရိုးနှစ်ခုပါပီး ဘောနပ် အနေနဲ့ အလုပ်ရှာ‌ဖွေ ခြင်း ကို ပါ ထည့်သွင်းထားပါတယ်",
+    "description": "Course တစ်ခုစီတွင် concept ကို နားလည်ခြင်း၊ live components တည်ဆောက်သည်ကို ကြည့်ခြင်း၊ ကိုယ်တိုင် တည်ဆောက်ခြင်း၊ checkpoint ဖြေဆိုခြင်း ဟူသော ပုံစံအတိုင်း သင်ယူပါသည်။ Bonus track တွင် အလုပ်ရှာဖွေရေးအတွက် အားလုံးကို ပြင်ဆင်ပေးပါသည်။",
     "courseOne": {
       "label": "Course 01",
       "title": "Production-Grade React",
-      "description": "React ကို အနက်ရှိုင်းဆုံး သင်ယူကာ tested, shippable full-stack app အထိ တည်ဆောက်ပါ။",
+      "description": "React နည်းပညာ ကို အနက်ရှိုင်းဆုံး သင်ယူကာ production application တခု ပြုလုပ်နိင် သည် အထိ တည်ဆောက်ပါ။",
       "bullets": [
         "Rendering, JSX & components",
         "Hooks, state & side effects",
@@ -35,12 +35,12 @@
         "Supabase backend — auth, database & storage",
         "Testing, Core Web Vitals, a11y & security"
       ],
-      "outcome": "Real full-stack app ကို တည်ဆောက်ပြီး ship နိုင်စွမ်း ရရှိပါမည်။"
+      "outcome": "လူအများသုံးနိင်သော production application တခု ပြုလုပ်နိုင်စွမ်း ရရှိပါမည်။"
     },
     "courseTwo": {
       "label": "Course 02",
       "title": "Planned AI Coding",
-      "description": "Senior engineer များ လုပ်ဆောင်သည့်အတိုင်း AI agents များဖြင့် software တည်ဆောက်ပါ — planned, reviewed, clean။",
+      "description": "Senior engineer များ လုပ်ဆောင်သည့်အတိုင်း AI agents များဖြင့် software တည်ဆောက်ပါ — specify, plan, tasks, implement",
       "bullets": [
         "AI coding အခြေခံ & prompting",
         "AI output ကို review & testing လုပ်ခြင်း",
@@ -49,42 +49,43 @@
         "Spec-driven development",
         "Automated, guarded pipelines"
       ],
-      "outcome": "Agent များဖြင့် ပိုမြန်မြန် ship နိုင်စွမ်း ရရှိပါမည်။"
+      "outcome": "Coding agent ကို အသုံးပြု၍ product တခုကို စနစ်တကျ တည်ဆောက်နိင်မည်။"
     },
     "bonus": {
       "label": "🎁 Bonus Track",
       "sublabel": "Career Launch",
-      "title": "Getting Hired — အလုပ်ရခြင်း",
-      "description": "သင်၏ capstone ကို real world အတွက် ပြင်ဆင်ပါ — CV, portfolio, LinkedIn, interviews။ Module တစ်ခုစီတွင် သင်တည်ဆောက်ပြီးသား app ကို ပြန်သုံးသော deliverable ပါရှိပါသည်။",
+      "title": "Getting Hired — အလုပ်ရရန် ပြင်ဆင်ခြင်း",
+      "description": "သင်ရဲ့ ကိုယ်ပိုင် product နဲ့ အတူ အလုပ်ရရန် ပြင်ဆင်ပေးခြင်း — CV, portfolio, LinkedIn, interviews Practice",
       "bullets": [
         "Target ကို သိခြင်း — အလုပ်ရှင်များ ဘာကို ငှားသလဲ",
         "Capstone ဖြင့် ဦးဆောင်သော one-page CV",
         "ရောင်းနိုင်သော LinkedIn profile",
         "Live portfolio + case study",
-        "Freelancing & ပထမ client များ",
+        "Freelancing & ပထမဦးဆုံး client ကိုရှာဖွေခြင်း",
         "Interviews & offer ရယူခြင်း"
       ],
       "outcome": "Job-ready portfolio, CV နှင့် interview prep ပါရှိပါမည်။"
     }
   },
-  "howItWorks": {
-    "heading": "ဘယ်လို အလုပ်လုပ်သလဲ",
-    "title": "Project တစ်ခုတည်းဖြင့် အစမှအဆင့်အထိ — အလုပ်ရှာဖွေရေးအထိ ပါဝင်ပါသည်။",
+  "howToLearn": {
+    "kicker": "HOW TO LEARN",
+    "heading": "ဘယ်လို ",
+    "title": "Project တစ်ခုတည်းဖြင့် အစမှအဆင့်အထိ — real products အမှန်တကယ် တည်ဆောက်ပုံအတိုင်း သင်ယူပါ။",
     "step1": {
-      "title": "တည်ဆောက်ပြီး ship မည်",
-      "body": "Course 01 တွင် clean components နှင့် solid state ပါသော working React app ကို ဖန်တီးကာ real Supabase backend ဖြင့် accounts နှင့် data ကို ထည့်သွင်းပြီး production-ready — tested, Lighthouse ဖြင့် audited, accessible, secure — ဖြစ်အောင် လုပ်ပါမည်။"
+      "title": "နက်နက်ရှိုင်းရှိုင်း သင်ယူ ကာ ကိုယ်ပိုင် product ကို စဉ်းစားပါ",
+      "body": "React ကို သီးသန့် သင်ယူရုံ မဟုတ်ပါ။ Concept — hooks, Suspense, performance, Supabase, RSC — တိုင်း  ကို product အတွက် ဘာကြောင့် အရေးကြီးသလဲ ဆိုတဲ့ အမြင်ဖြင့် သင်ယူပါ။ Course 01 ပြီးချိန်တွင် feature brief တစ်ခု ဖတ်ပြီး စဉ်းစားနိုင်ပါမည် — 'component shape မှန်ကန်ရဲ့လား၊ state model မှန်ရဲ့လား၊ backend architecutre မှန်ရဲ့လား?'"
     },
     "step2": {
-      "title": "AI ဖြင့် extend လုပ်မည်",
-      "body": "Course 02 တွင် agent workflow မှတဆင့် feature အသစ်တစ်ခု ထည့်သွင်းကာ spec နှင့် passing tests ပါသော clean pull request အဖြစ် landing ပါမည်။"
+      "title": "Team တစ်ခုလို ပူးပေါင်းလုပ်ဆောင်ပါ",
+      "body": "လုပ်ငန်းခွင် တွင် တစ်ယောက်တည်း လုပ်ရမည်မဟုတ် နှင့် မည်သို့ပူးပေါင်းလုပ်ဆောင်ရမည်ကို သင်ယူရမည်။ Course 02 တွင် IT team များ လုပ်သည့်အတိုင်း — PM ထံမှ specs ယူခြင်း၊ Designer နှင့် ဆွေးနွေး တိုင်ပင် ကာ Figma file မှ designs ကို ခသိန translate လုပ်ခြင်း၊ trade-offs ဆွေးနွေးခြင်း၊  pull requests တင် ခြင်း၊ တစ်ယောက် code ကို တစ်ယောက် review လုပ်ခြင်း — ကိုယ်ပိုင် Agentic Workflow တခု ကို တည်ဆောက်ခြင်း။"
     },
     "step3": {
-      "title": "ဒါနဲ့ အလုပ်ရမည်",
-      "body": "Bonus track တွင် သင်၏ capstone ကို real world အတွက် package လုပ်ပါမည် — project ဖြင့် ဦးဆောင်သော one-page CV ရေးခြင်း၊ ရှာဖွေတွေ့ရှိနိုင်သော LinkedIn profile ပြုလုပ်ခြင်း၊ portfolio site နှင့် case study ဖြင့် live deploy လုပ်ခြင်း၊ freelance client များ ရယူခြင်း သို့မဟုတ် interview များ အောင်မြင်ခြင်း — အားလုံးကို သင်တည်ဆောက်ပြီးသား app ဖြင့် လုပ်ဆောင်ပါမည်။"
+      "title": "အမှန်တကယ် ship လုပ်ပါ",
+      "body": "နောက်ဆုံး အဆင့် က အလုပ် သို့မဟုတ် client ရစေတဲ့ အဆင့် ပါ — ကိုယ်ပိုင် Product တခု ကို ထုတ်လုပ်ပါ။ Full-stack app ကို live deploy လုပ်ခြင်း၊ case study ရေးခြင်း၊ ပထမဆုံး proposal သို့မဟုတ် application ပို့ခြင်း — အားလုံးကို တည်ဆောက်ပြီးသား project ဖြင့် လုပ်ဆောင်ပါမည်။ Bonus career track က သင်လုပ်ပြီးသားကို package လုပ်ပေးရုံပါ။"
     },
     "capstone": {
-      "title": "Capstone project — သင်၏ portfolio တွင် real product ပါရှိပါမည်။",
-      "body": "Toy exercises မဟုတ်ပါ — course နှစ်ခုလုံးတွင် တည်ဆောက်၊ harden၊ extend လုပ်သော genuine application တစ်ခု။ အလုပ်ရခြင်း သို့မဟုတ် promotion ရခြင်းအတွက် အတိအကျ လိုအပ်သော အမျိုးအစားဖြစ်ပါသည်။"
+      "title": "Project တစ်ခု — idea မှ သင်၏ portfolio ထဲရှိ shipped product အထိ။",
+      "body": "Tutorial တခု ရေးရမှာ မဟုတ်ပါ။ Team အသေးစားတစ်ခု လုပ်သည့်အတိုင်း real application တစ်ခု တည်ဆောက်ပါမည် — PM-driven, design-aware, production-hardened, timeline management , agentic coding"
     }
   },
   "toolkit": {
@@ -97,6 +98,7 @@
     "backendBaas": "Backend / BaaS",
     "testingQuality": "Testing & quality",
     "shipCollaborate": "Ship & collaborate",
+    "projectManagement": "Project management",
     "toolsCount": "{{count}} ခု"
   },
   "timeline": {
@@ -214,21 +216,21 @@
     "title": "မစာရင်းသွင်းမီ သိထားသင့်သည့်အချက်များ။",
     "schedule": {
       "title": "အချိန်ဇယား & ကြာချိန်",
-      "desc": "၁၄ ပတ် · တစ်ပတ်လျှင် ၆ နာရီ — စနေနှင့် တနင်္ဂနွေ၊ တစ်နေ့လျှင် ၃ နာရီစီ hands-on labs ပါဝင် — ၉ ပတ် React (Supabase backend အပါအဝင်)၊ ၂ ပတ် AI coding၊ ၂ ပတ် group build။ 2026 ခုနှစ် သြဂုတ်လ စတင်ပါသည်။"
+      "desc": "၁၄ ပတ် · တစ်ပတ်လျှင် ၆ နာရီ — စနေနှင့် တနင်္ဂနွေ၊ တစ်နေ့လျှင် ၃ နာရီစီ hands-on exercises ပါဝင် — ၉ ပတ် React (Supabase backend အပါအဝင်)၊ ၂ ပတ် AI coding၊ ၂ ပတ် group build။ 2026 ခုနှစ် သြဂုတ်လ စတင်ပါသည်။"
     },
     "format": {
       "title": "ပုံစံ",
-      "desc": "Live online classes နှင့် on-the-job (OJT) mentoring ပေါင်းစပ်ထားသည် — code ရေး၊ review ခံယူ၊ direct feedback ဖြင့် တိုးတက်ပါ။"
+      "desc": "Live online classes နှင့်  mentoring နှင့် ကိုယ်ပိုင် Web App တခုကို တည်ဆောက် လွှတ်တင် ခြင်း အထိပါဝင် သည်။ — Product Plan ကို အသေးစိတ် Team နဲ့ ဆုံးဖြတ် ၊  PM နဲ့ ဆွေးနွေး ၊ Designer နဲ့ တိုင်ပင် ၊ Project Structureကို အစီအစဥ်ချ၊ code ရေး၊ review ခံယူ၊ direct feedback loop ဖြင့် တိုးတက်ပါ။"
     },
     "audience": {
       "title": "ဘယ်သူအတွက်လဲ",
-      "desc": "HTML, CSS နှင့် JavaScript ကို သက်တောင့်သက်ရှိ ရှိသော junior & mid developers များအတွက် production-grade frontend engineer ဖြစ်လိုသူများ။"
+      "desc": "HTML, CSS နှင့် JavaScript ကို နားလည်ပီး React ကို အခြေခံ သိရှိသော junior & mid developers များအတွက် production-grade Web App ကို တခုကို ကိုယ်ပိုင်တည်ဆောက်လို့ သော သူများ၊ Front-End Engineer ဖြင့် အသက်မွေး လိုသူများ။"
     }
   },
   "instructor": {
     "heading": "သင့်ဆရာ",
     "title": "Ship & lead လုပ်သူထံမှ သင်ယူပါ။",
-    "name": "ဉာဏ်လင်းထွန်း",
+    "name": "Nyan Lin Tun",
     "role": "Senior Full-Stack JS Developer & Project Director",
     "bio": "8+ နှစ် web, mobile နှင့် IoT production apps များကို တည်ဆောက်ပြီး ဦးဆောင်ခဲ့ပါသည်။ Developer training programs များကို ဦးဆောင်ကာ junior dev များကို React, Next.js နှင့် agentic coding ကို real on-the-job format ဖြင့် သင်ကြားပေးပါသည် — ဤ course သည် ထိုအတွေ့အကြုံကို structured ပုံစံဖြင့် တင်ပြထားခြင်း ဖြစ်ပါသည်။"
   },

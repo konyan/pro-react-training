@@ -10,18 +10,18 @@ export default function HowItWorks() {
   const steps = [
     {
       number: '1',
-      title: t('howItWorks.step1.title'),
-      body: t('howItWorks.step1.body'),
+      title: t('howToLearn.step1.title'),
+      body: t('howToLearn.step1.body'),
     },
     {
       number: '2',
-      title: t('howItWorks.step2.title'),
-      body: t('howItWorks.step2.body'),
+      title: t('howToLearn.step2.title'),
+      body: t('howToLearn.step2.body'),
     },
     {
       number: '3',
-      title: t('howItWorks.step3.title'),
-      body: t('howItWorks.step3.body'),
+      title: t('howToLearn.step3.title'),
+      body: t('howToLearn.step3.body'),
     },
   ]
 
@@ -30,10 +30,10 @@ export default function HowItWorks() {
       <div className="mx-auto flex max-w-[1440px] flex-col gap-12 px-6 py-16 lg:gap-16 lg:px-[120px] lg:py-24">
         <AnimatedSection className="flex max-w-[900px] flex-col gap-4">
           <p className="font-mono text-sm font-semibold uppercase tracking-[2px] text-primary">
-            {t('howItWorks.heading')}
+            {t('howToLearn.heading')}
           </p>
           <h2 className="text-3xl font-bold tracking-tight text-text-primary lg:text-[40px]">
-            {t('howItWorks.title')}
+            {t('howToLearn.title')}
           </h2>
         </AnimatedSection>
 
@@ -74,10 +74,10 @@ export default function HowItWorks() {
           </motion.div>
           <div className="flex flex-col gap-2">
             <h3 className="text-xl font-bold text-text-primary">
-              {t('howItWorks.capstone.title')}
+              {t('howToLearn.capstone.title')}
             </h3>
             <p className="text-[15px] leading-relaxed text-text-primary">
-              {t('howItWorks.capstone.body')}
+              {t('howToLearn.capstone.body')}
             </p>
           </div>
         </motion.div>
