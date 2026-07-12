@@ -228,11 +228,11 @@
     }
   },
   "instructor": {
-    "heading": "သင့်ဆရာ",
-    "title": "Ship & lead လုပ်သူထံမှ သင်ယူပါ။",
+    "heading": "ကျနော် အကြောင်း",
+    "title": "အတွေ့အကြုံရှိ သူစီမှာ သင်ယူပါ။",
     "name": "Nyan Lin Tun",
     "role": "Senior Full-Stack JS Developer & Project Director",
-    "bio": "8+ နှစ် web, mobile နှင့် IoT production apps များကို တည်ဆောက်ပြီး ဦးဆောင်ခဲ့ပါသည်။ Developer training programs များကို ဦးဆောင်ကာ junior dev များကို React, Next.js နှင့် agentic coding ကို real on-the-job format ဖြင့် သင်ကြားပေးပါသည် — ဤ course သည် ထိုအတွေ့အကြုံကို structured ပုံစံဖြင့် တင်ပြထားခြင်း ဖြစ်ပါသည်။"
+    "bio": "8+ နှစ် web, mobile နှင့် IoT production apps များကို တည်ဆောက်ပြီး ဦးဆောင်ခဲ့ပါသည်။ Barcamper, Dev Speaker,Developer training programs များကို ဦးဆောင်ကာ များကို React, Next.js ဖြင့် သင်ကြားပေးခဲ့သည်။"
   },
   "cta": {
     "heading": "သင် အဆင်သင့်ဖြစ်ချိန်တွင်",
