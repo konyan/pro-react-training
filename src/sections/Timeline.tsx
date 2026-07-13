@@ -64,7 +64,7 @@ export default function Timeline() {
           <h2 className="text-3xl font-bold tracking-tight text-text-primary lg:text-[36px]">
             {t('timeline.title')}
           </h2>
-          <p className="max-w-[720px] text-[17px] leading-relaxed text-text-secondary">
+          <p className="max-w-[720px] text-[17px] leading-relaxed text-text-secondary leading-relaxed">
             {t('timeline.description')}
           </p>
         </AnimatedSection>

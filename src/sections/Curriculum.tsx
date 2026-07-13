@@ -39,7 +39,7 @@ export default function Curriculum() {
           <p className="font-mono text-sm font-semibold uppercase tracking-[2px] text-primary">
             {t('curriculum.heading')}
           </p>
-          <h2 className="text-3xl font-bold tracking-tight text-text-primary lg:text-[40px]">
+          <h2 className="text-3xl font-bold tracking-tight text-text-primary lg:text-[40px] leading-relaxed">
             {t('curriculum.title')}
           </h2>
           <p className="max-w-[820px] text-[17px] leading-relaxed text-text-secondary">

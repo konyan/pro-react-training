@@ -32,7 +32,7 @@ export default function HowItWorks() {
           <p className="font-mono text-sm font-semibold uppercase tracking-[2px] text-primary">
             {t('howToLearn.heading')}
           </p>
-          <h2 className="text-3xl font-bold tracking-tight text-text-primary lg:text-[40px]">
+          <h2 className="text-3xl font-bold tracking-tight text-text-primary lg:text-[40px] leading-relaxed">
             {t('howToLearn.title')}
           </h2>
         </AnimatedSection>
