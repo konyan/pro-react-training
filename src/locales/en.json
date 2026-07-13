@@ -15,7 +15,7 @@
     "weeksInfo": "14 weeks · 6 hrs/week",
     "formatInfo": "Live online + OJT mentoring",
     "startDate": "Starts Aug 2026",
-    "ctaPrimary": "Message me to join",
+    "ctaPrimary": "Fill out the form to join",
     "ctaSecondary": "See the curriculum"
   },
   "curriculum": {
@@ -238,7 +238,7 @@
     "heading": "READY WHEN YOU ARE",
     "title": "Let's talk about joining.",
     "description": "Seats are limited so I can give real feedback. Send me a message — tell me where you are as a developer and I'll help you figure out if this path is right for you.",
-    "buttonText": "Fill Form to join"
+    "buttonText": "Fill out the form to join"
   },
   "footer": {
     "brand": "The Frontend Path",

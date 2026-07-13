@@ -29,7 +29,9 @@ export default function CTA() {
 
         <StaggerContainer className="flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:flex-wrap sm:items-center" stagger={0.08} delay={0.2}>
           <StaggerItem className="w-full sm:w-auto">
-            <AnimatedButton variant="primary" className="w-full px-6 py-3.5 text-[15px]">
+            <AnimatedButton variant="primary" className="w-full px-6 py-3.5 text-[15px]" onClick={() => {
+              window.open('https://forms.gle/K7qDLEQT4wfJcoJP7', '_blank')
+            }}>
               {t('cta.buttonText')}
             </AnimatedButton>
           </StaggerItem>

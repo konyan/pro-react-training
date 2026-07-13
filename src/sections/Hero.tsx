@@ -156,10 +156,14 @@ export default function Hero() {
 
           <StaggerItem>
             <div className="flex flex-wrap gap-3">
-              <AnimatedButton variant="primary" className="gap-2 px-5 py-3 text-[15px]">
+              <AnimatedButton variant="primary" className="gap-2 px-5 py-3 text-[15px]" onClick={() => {
+                window.open('https://forms.gle/K7qDLEQT4wfJcoJP7', '_blank')
+              }}>
                 {t('hero.ctaPrimary')} <span>→</span>
               </AnimatedButton>
-              <AnimatedButton variant="secondary" className="px-5 py-3 text-[15px]">
+              <AnimatedButton variant="secondary" className="px-5 py-3 text-[15px]" onClick={() => {
+                document.getElementById('curriculum')?.scrollIntoView({ behavior: 'smooth' })
+              }}>
                 {t('hero.ctaSecondary')}
               </AnimatedButton>
             </div>
