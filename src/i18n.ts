@@ -23,4 +23,12 @@ i18n
     },
   })
 
+// Sync <html lang> with i18n language changes
+function syncHtmlLang(lng: string) {
+  document.documentElement.lang = lng === 'en' ? 'en' : 'my'
+}
+
+syncHtmlLang(i18n.language || 'my')
+i18n.on('languageChanged', syncHtmlLang)
+
 export default i18n
