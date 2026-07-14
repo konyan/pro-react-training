@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next'
 import AnimatedButton from '../components/AnimatedButton'
 import StaggerContainer, { StaggerItem } from '../components/StaggerContainer'
 
+import { trackCta } from '../hooks/useAnalytics'
+
 const tags = ['React 19 & RSC', 'Server Components', 'TypeScript', 'Supabase', 'Full-Stack', 'AI-Assisted', 'Testing']
 
 const codeLines = [
@@ -157,11 +159,13 @@ export default function Hero() {
           <StaggerItem>
             <div className="flex flex-wrap gap-3">
               <AnimatedButton variant="primary" className="gap-2 px-5 py-3 text-[15px]" onClick={() => {
+                trackCta('hero_join')
                 window.open('https://forms.gle/K7qDLEQT4wfJcoJP7', '_blank')
               }}>
                 {t('hero.ctaPrimary')} <span>→</span>
               </AnimatedButton>
               <AnimatedButton variant="secondary" className="px-5 py-3 text-[15px]" onClick={() => {
+                trackCta('hero_see_curriculum')
                 document.getElementById('curriculum')?.scrollIntoView({ behavior: 'smooth' })
               }}>
                 {t('hero.ctaSecondary')}

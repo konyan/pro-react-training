@@ -1,6 +1,7 @@
 import { motion, useReducedMotion, AnimatePresence } from 'framer-motion'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { trackCta } from '../hooks/useAnalytics'
 
 const navLinkKeys = ['curriculum', 'timeline', 'instructor', 'details'] as const
 
@@ -67,7 +68,7 @@ export default function Navbar() {
           </motion.button>
 
           <motion.button
-            onClick={() => scrollTo('cta')}
+            onClick={() => { trackCta('nav_enroll'); scrollTo('cta') }}
             initial={{ opacity: shouldReduceMotion ? 1 : 0, scale: shouldReduceMotion ? 1 : 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.4, delay: 0.3, type: 'spring', stiffness: 300, damping: 20 }}
@@ -135,6 +136,7 @@ export default function Navbar() {
                 <button
                   type="button"
                   onClick={() => {
+                    trackCta('nav_enroll_mobile')
                     scrollTo('cta')
                     setMobileOpen(false)
                   }}

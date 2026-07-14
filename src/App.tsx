@@ -9,6 +9,7 @@ import Instructor from './sections/Instructor'
 import CTA from './sections/CTA'
 import Footer from './sections/Footer'
 import ScrollProgress from './components/ScrollProgress'
+import TrackedSection from './components/TrackedSection'
 
 function App() {
   return (
@@ -16,14 +17,14 @@ function App() {
       <ScrollProgress />
       <Navbar />
       <main>
-        <Hero />
-        <Curriculum />
-        <HowItWorks />
-        <Toolkit />
-        <Timeline />
-        <Details />
-        <Instructor />
-        <CTA />
+        <TrackedSection name="hero"><Hero /></TrackedSection>
+        <TrackedSection name="curriculum"><Curriculum /></TrackedSection>
+        <TrackedSection name="howToLearn"><HowItWorks /></TrackedSection>
+        <TrackedSection name="toolkit"><Toolkit /></TrackedSection>
+        <TrackedSection name="timeline"><Timeline /></TrackedSection>
+        <TrackedSection name="details"><Details /></TrackedSection>
+        <TrackedSection name="instructor"><Instructor /></TrackedSection>
+        <TrackedSection name="cta"><CTA /></TrackedSection>
       </main>
       <Footer />
     </div>
