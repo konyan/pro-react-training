@@ -7,7 +7,7 @@ export default function ScrollProgress() {
   return (
     <motion.div
       style={{ scaleX: shouldReduceMotion ? 0 : scrollYProgress }}
-      className="fixed left-0 right-0 top-0 z-[60] h-[3px] origin-left bg-primary"
+      className="fixed left-0 right-0 top-0 z-[60] h-[3px] origin-left bg-action"
     />
   )
 }

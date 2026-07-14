@@ -19,7 +19,7 @@ export default function AnimatedCard({ children, className = '', hover = true, d
       transition={{ type: 'spring', stiffness: 300, damping: 24, delay }}
       whileHover={
         hover && !shouldReduceMotion
-          ? { y: -4, boxShadow: '0 12px 40px -12px rgba(0,0,0,0.15)' }
+          ? { y: -4, boxShadow: '0 12px 32px 0 #15308F24' }
           : {}
       }
       className={className}

@@ -8,10 +8,10 @@ export default function CTA() {
   const { t } = useTranslation()
 
   return (
-    <section id="cta" className="bg-bg-dark">
-      <div className="mx-auto flex max-w-[1440px] flex-col items-center gap-8 px-6 py-16 text-center lg:px-[120px] lg:py-24">
+    <section id="cta" className="bg-surface-inverse">
+      <div className="mx-auto flex max-w-[1200px] flex-col items-center gap-8 px-6 py-16 text-center lg:px-12 lg:py-24">
         <AnimatedSection>
-          <p className="font-mono text-sm font-semibold uppercase tracking-[1px] text-primary">
+          <p className="text-[0.6875rem] font-extrabold italic uppercase tracking-[0.14em] text-accent">
             {t('cta.heading')}
           </p>
         </AnimatedSection>
@@ -23,7 +23,7 @@ export default function CTA() {
         </AnimatedSection>
 
         <AnimatedSection delay={0.15}>
-          <p className="max-w-[720px] text-[17px] leading-relaxed text-text-tertiary">
+          <p className="max-w-[720px] text-[1.0625rem] leading-[1.55] text-text-dim">
             {t('cta.description')}
           </p>
         </AnimatedSection>

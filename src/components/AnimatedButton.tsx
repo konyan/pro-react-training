@@ -19,12 +19,12 @@ export default function AnimatedButton({
   const shouldReduceMotion = useReducedMotion()
 
   const baseStyles =
-    'inline-flex items-center justify-center rounded-lg font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-primary/50'
+    'inline-flex items-center justify-center rounded-[6px] font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-focus/50'
 
   const variants = {
-    primary: 'bg-primary text-white hover:bg-primary-dark',
-    secondary: 'bg-bg-light text-text-primary border border-border hover:border-text-secondary',
-    outline: 'bg-transparent text-white border border-border-dark hover:border-border',
+    primary: 'bg-action text-white hover:bg-action-hover',
+    secondary: 'bg-surface text-text border border-border-default hover:border-text-muted',
+    outline: 'bg-transparent text-white border border-border-inverse hover:border-border-default',
   }
 
   return (

@@ -8,10 +8,10 @@ import AnimatedSection from '../components/AnimatedSection'
 gsap.registerPlugin(ScrollTrigger)
 
 const phaseColorMap: Record<string, string> = {
-  'Course 01 · React': 'bg-callout-bg text-primary',
-  'Course 02 · AI Coding': 'bg-blue-100 text-accent-blue',
-  'Capstone · Group Build': 'bg-amber-100 text-amber-700',
-  'Bonus · Career Launch': 'bg-amber-500/15 text-amber-700',
+  'Course 01 · React': 'bg-surface-selected text-action',
+  'Course 02 · AI Coding': 'bg-blue-100 text-accent',
+  'Capstone · Group Build': 'bg-feedback-warning-surface text-feedback-warning-text',
+  'Bonus · Career Launch': 'bg-feedback-warning/15 text-feedback-warning-text',
 }
 
 export default function Timeline() {
@@ -55,48 +55,48 @@ export default function Timeline() {
   }, [shouldReduceMotion])
 
   return (
-    <section id="timeline" className="bg-surface">
-      <div className="mx-auto flex max-w-[1440px] flex-col gap-8 px-6 py-16 lg:px-[120px] lg:py-24">
+    <section id="timeline" className="bg-surface-sunken">
+      <div className="mx-auto flex max-w-[1200px] flex-col gap-8 px-6 py-16 lg:px-12 lg:py-24">
         <AnimatedSection className="flex max-w-[900px] flex-col gap-4">
-          <p className="font-mono text-sm font-semibold uppercase tracking-[1px] text-primary">
+          <p className="text-[0.6875rem] font-extrabold italic uppercase tracking-[0.14em] text-action">
             {t('timeline.heading')}
           </p>
-          <h2 className="text-3xl font-bold tracking-tight text-text-primary lg:text-[36px]">
+          <h2 className="text-[2.125rem] font-extrabold tracking-tight text-text">
             {t('timeline.title')}
           </h2>
-          <p className="max-w-[720px] text-[17px] leading-relaxed text-text-secondary leading-relaxed">
+          <p className="max-w-[720px] text-[1.0625rem] leading-[1.55] text-text-muted">
             {t('timeline.description')}
           </p>
         </AnimatedSection>
 
         <AnimatedSection delay={0.1}>
-          <div className="w-fit rounded-full border border-border bg-bg-light px-4 py-2 text-sm text-text-primary">
+          <div className="w-fit rounded-full border border-border-default bg-surface px-4 py-2 text-sm text-text">
             {t('timeline.scheduleInfo')}
           </div>
         </AnimatedSection>
 
-        <div ref={tableRef} className="overflow-hidden rounded-lg border border-border bg-bg-light">
-          <div className="hidden grid-cols-[60px_140px_200px_1fr] gap-4 px-6 py-4 text-xs font-semibold uppercase tracking-wide text-text-secondary lg:grid">
+        <div ref={tableRef} className="overflow-hidden rounded-[6px] border border-border-default bg-surface">
+          <div className="hidden grid-cols-[60px_140px_200px_1fr] gap-4 px-6 py-4 text-[0.6875rem] font-extrabold italic uppercase tracking-[0.14em] text-text-muted lg:grid">
             <span>{t('timeline.weekHeader')}</span>
             <span>{t('timeline.datesHeader')}</span>
             <span>{t('timeline.phaseHeader')}</span>
             <span>{t('timeline.focusHeader')}</span>
           </div>
 
-          <div className="hidden h-px bg-border lg:block" />
+          <div className="hidden h-px bg-border-default lg:block" />
 
           {rows.map((row, idx) => {
             const isBonus = row.phase === 'Bonus · Career Launch'
-            const phaseColor = phaseColorMap[row.phase] ?? 'bg-callout-bg text-primary'
+            const phaseColor = phaseColorMap[row.phase] ?? 'bg-surface-selected text-action'
 
             return (
               <div
                 key={row.week}
                 ref={(el) => { rowRefs.current[idx] = el }}
-                className={`border-b border-border transition-colors last:border-b-0 lg:grid lg:grid-cols-[60px_140px_200px_1fr] lg:items-center lg:gap-4 lg:border-b-0 lg:px-6 lg:py-4 ${
+                className={`border-b border-border-default transition-colors last:border-b-0 lg:grid lg:grid-cols-[60px_140px_200px_1fr] lg:items-center lg:gap-4 lg:border-b-0 lg:px-6 lg:py-4 ${
                   isBonus
-                    ? 'bg-gradient-to-r from-amber-50 via-amber-50/80 to-bg-light hover:bg-amber-50/90'
-                    : `hover:bg-callout-bg/30 ${idx % 2 === 1 ? 'bg-surface' : 'bg-bg-light'}`
+                    ? 'bg-gradient-to-r from-feedback-warning-surface via-feedback-warning-surface/80 to-surface hover:bg-feedback-warning-surface/90'
+                    : `hover:bg-surface-selected/30 ${idx % 2 === 1 ? 'bg-surface-sunken' : 'bg-surface'}`
                 }`}
               >
                 {/* Mobile */}
@@ -106,39 +106,39 @@ export default function Timeline() {
                       {isBonus && <span className="mr-1">🎁</span>}
                       {row.phase}
                     </span>
-                    <span className="font-mono text-sm text-text-secondary">{row.dates}</span>
+                    <span className="font-data text-sm text-text-muted">{row.dates}</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <span className={`flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full font-mono text-sm font-bold ${
+                    <span className={`flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full font-data text-sm font-bold ${
                       isBonus
-                        ? 'bg-amber-500 text-white'
-                        : 'bg-surface text-text-primary'
+                        ? 'bg-feedback-warning text-white'
+                        : 'bg-surface-sunken text-text'
                     }`}>
                       {row.week}
                     </span>
-                    <span className="text-[15px] font-semibold text-text-primary">{row.title}</span>
+                    <span className="text-[15px] font-semibold text-text">{row.title}</span>
                   </div>
-                  <span className="text-sm leading-relaxed text-text-secondary">{row.desc}</span>
+                  <span className="text-sm leading-[1.55] text-text-muted">{row.desc}</span>
                 </div>
 
                 {/* Desktop */}
                 <span className="hidden lg:block">
-                  <span className={`inline-flex h-8 w-8 items-center justify-center rounded-full font-mono text-sm font-bold ${
+                  <span className={`inline-flex h-8 w-8 items-center justify-center rounded-full font-data text-sm font-bold ${
                     isBonus
-                      ? 'bg-amber-500 text-white'
-                      : 'text-text-primary'
+                      ? 'bg-feedback-warning text-white'
+                      : 'text-text'
                   }`}>
                     {row.week}
                   </span>
                 </span>
-                <span className="hidden text-sm text-text-secondary lg:block">{row.dates}</span>
+                <span className="hidden text-sm text-text-muted lg:block">{row.dates}</span>
                 <span className={`hidden w-fit rounded-full px-2.5 py-1 text-xs font-semibold lg:block ${phaseColor}`}>
                   {isBonus && <span className="mr-1">🎁</span>}
                   {row.phase}
                 </span>
                 <div className="hidden flex-col gap-1 lg:flex">
-                  <span className="text-[15px] font-semibold text-text-primary">{row.title}</span>
-                  <span className="text-sm leading-relaxed text-text-secondary">{row.desc}</span>
+                  <span className="text-[15px] font-semibold text-text">{row.title}</span>
+                  <span className="text-sm leading-[1.55] text-text-muted">{row.desc}</span>
                 </div>
               </div>
             )

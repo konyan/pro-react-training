@@ -6,6 +6,7 @@ import Toolkit from './sections/Toolkit'
 import Timeline from './sections/Timeline'
 import Details from './sections/Details'
 import Instructor from './sections/Instructor'
+import Pricing from './sections/Pricing'
 import CTA from './sections/CTA'
 import Footer from './sections/Footer'
 import ScrollProgress from './components/ScrollProgress'
@@ -13,7 +14,7 @@ import TrackedSection from './components/TrackedSection'
 
 function App() {
   return (
-    <div className="min-h-screen bg-bg-light text-text-primary">
+    <div className="min-h-screen bg-surface text-text">
       <ScrollProgress />
       <Navbar />
       <main>
@@ -24,6 +25,7 @@ function App() {
         <TrackedSection name="timeline"><Timeline /></TrackedSection>
         <TrackedSection name="details"><Details /></TrackedSection>
         <TrackedSection name="instructor"><Instructor /></TrackedSection>
+        <TrackedSection name="pricing"><Pricing /></TrackedSection>
         <TrackedSection name="cta"><CTA /></TrackedSection>
       </main>
       <Footer />

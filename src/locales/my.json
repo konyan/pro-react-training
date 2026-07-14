@@ -4,6 +4,7 @@
     "timeline": "အချိန်ဇယား",
     "instructor": "ဆရာ အကြောင်း",
     "details": "အသေးစိတ်",
+    "pricing": "ေစ်းနှုန်း",
     "enrollNow": "စာရင်းသွင်းမည်",
     "toggleMenu": "မီနူးဖွင့်/ပိတ်"
   },
@@ -233,6 +234,43 @@
     "name": "Nyan Lin Tun",
     "role": "Senior Full-Stack JS Developer & Project Director",
     "bio": "8+ နှစ် web, mobile နှင့် IoT production apps များကို တည်ဆောက်ပြီး ဦးဆောင်ခဲ့ပါသည်။ Barcamper, Dev Speaker,Developer training programs များကို ဦးဆောင်ကာ များကို React, Next.js ဖြင့် သင်ကြားပေးခဲ့သည်။"
+  },
+  "pricing": {
+    "heading": "ေစ်းနှုန်း",
+    "title": "ေစ်းနှုန်းတစ်ခုတည်း။ လမ်းကြောင်းတစ်ခုတည်း။ သင့်ဘတ်ဂျက်နှင့် ကိုက်ညီသလို ေငွပေးချေပါ။",
+    "description": "13 ပတ် လမ်းကြောင်း အတူတူ၊ သင်ရိုးညွှန်းတမ်း အတူတူ၊ mentoring အတူတူ။ ေငွပေးချေနည်း နှစ်မျိုး — သင့်ဘတ်ဂျက်နှင့် ကိုက်ညီသည်ကို ေရြးပါ။",
+    "ctaButton": "ေနရာ အတည်ပြုမည်",
+    "note": "ေနရာ အကန့်အသတ်ရှိပါသဖြင့် feedback ကို တစ်ဦးချင်းစီ အနီးကပ် ပေးနိုင်ပါသည်။ ေနရာအတည်ပြုရန် message ပို့ပါ — ေငွပေးချေမှု အသေးစိတ်နှင့် အချိန်ဇယား အေကြာင်း မေးခြန်းများကို ေျဖကြားပေးပါမည်။",
+    "full": {
+      "label": "Option 01",
+      "title": "တစ်ကြိမ်တည်း ေပးချေ",
+      "subtitle": "Course မစတင်မီ တစ်ကြိမ်တည်း ေပးချေပါ။ ပြီးပါပြီ။",
+      "price": "1,000,000",
+      "features": [
+        "13 ပတ် လမ်းကြောင်း — 9 ပတ် React + 2 AI + 2 group build",
+        "Live online sessions + OJT mentoring (စနေ & တနင်္ဂနွေ၊ 3 နာရီ/နေ့)",
+        "ဆရာထံမှ တိုက်ရိုက် code review",
+        "Getting Hired bonus track ဝင်ခွင့်",
+        "သင့် portfolio အတွက် shipped full-stack product"
+      ]
+    },
+    "split": {
+      "label": "Option 02",
+      "title": "နှစ်ကြိမ် ခွဲေပးချေ",
+      "badge": "လူကြိုက်များ",
+      "subtitle": "စုစုပေါင်း 1,000,000 MMK အတူတူ၊ အကြိမ်နှစ်ကြိမ် ခွဲေပးချေပါ။",
+      "price": "500,000",
+      "total": "1,000,000",
+      "features": [
+        "ပထမ အကြိမ် — 500,000 MMK",
+        "ဒုတိယ အကြိမ် — 500,000 MMK",
+        "Full payment နှင့် အတူတူ — content သို့မဟုတ် mentoring ကွာခြားချက် မရှိပါ",
+        "ဘတ်ဂျက် အဆင်ေျပစေရန် နှစ်ကြိမ် ခွဲေပးချေ",
+        "ဆရာထံမှ တိုက်ရိုက် code review",
+        "Getting Hired bonus track ဝင်ခွင့်",
+        "သင့် portfolio အတွက် shipped full-stack product"
+      ]
+    }
   },
   "cta": {
     "heading": "သင် အဆင်သင့်ဖြစ်ချိန်တွင်",

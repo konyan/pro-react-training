@@ -4,6 +4,7 @@
     "timeline": "Timeline",
     "instructor": "Instructor",
     "details": "Details",
+    "pricing": "Pricing",
     "enrollNow": "Enroll now",
     "toggleMenu": "Toggle menu"
   },
@@ -233,6 +234,43 @@
     "name": "Nyan Lin Tun",
     "role": "Senior Full-Stack JS Developer & Project Director",
     "bio": "8+ years building and leading production apps across web, mobile and IoT. I run developer training programs and teach junior devs React, Next.js and agentic coding in a real on-the-job format — this course is that experience, structured."
+  },
+  "pricing": {
+    "heading": "PRICING",
+    "title": "One price. One path. Pay your way.",
+    "description": "Same 13-week path, same curriculum, same mentoring. Two ways to pay — pick whichever suits your budget.",
+    "ctaButton": "Confirm your spot",
+    "note": "Seats are limited so feedback stays personal. Message me to confirm a spot — I'll send payment details and answer any questions about the schedule.",
+    "full": {
+      "label": "Option 01",
+      "title": "Full payment",
+      "subtitle": "Pay once before the course starts. Done.",
+      "price": "1,000,000",
+      "features": [
+        "Full 13-week path — 9 weeks React + 2 AI + 2 group build",
+        "Live online sessions + OJT mentoring (Sat & Sun, 3 hrs/day)",
+        "Direct code reviews from the instructor",
+        "Access to the Getting Hired bonus track",
+        "A shipped full-stack product for your portfolio"
+      ]
+    },
+    "split": {
+      "label": "Option 02",
+      "title": "Split in two",
+      "badge": "POPULAR",
+      "subtitle": "Same total of 1,000,000 MMK, paid across two installments.",
+      "price": "500,000",
+      "total": "1,000,000",
+      "features": [
+        "Installment 1 — 500,000 MMK",
+        "Installment 2 — 500,000 MMK",
+        "Everything in Full payment — no difference in content or mentoring",
+        "Split the cost into two payments for easier budgeting",
+        "Direct code reviews from the instructor",
+        "Access to the Getting Hired bonus track",
+        "A shipped full-stack product for your portfolio"
+      ]
+    }
   },
   "cta": {
     "heading": "READY WHEN YOU ARE",

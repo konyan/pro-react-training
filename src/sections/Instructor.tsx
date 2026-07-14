@@ -11,13 +11,13 @@ export default function Instructor() {
   const shouldReduceMotion = useReducedMotion()
 
   return (
-    <section id="instructor" className="bg-surface">
-      <div className="mx-auto flex max-w-[1440px] flex-col gap-10 px-6 py-16 lg:gap-12 lg:px-[120px] lg:py-24">
+    <section id="instructor" className="bg-surface-sunken">
+      <div className="mx-auto flex max-w-[1200px] flex-col gap-10 px-6 py-16 lg:gap-12 lg:px-12 lg:py-24">
         <AnimatedSection className="flex max-w-[900px] flex-col gap-4">
-          <p className="font-mono text-sm font-semibold uppercase tracking-[1px] text-primary">
+          <p className="text-[0.6875rem] font-extrabold italic uppercase tracking-[0.14em] text-action">
             {t('instructor.heading')}
           </p>
-          <h2 className="text-3xl font-bold tracking-tight text-text-primary lg:text-[36px]">
+          <h2 className="text-[2.125rem] font-extrabold tracking-tight text-text">
             {t('instructor.title')}
           </h2>
         </AnimatedSection>
@@ -29,7 +29,7 @@ export default function Instructor() {
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             whileHover={shouldReduceMotion ? {} : { scale: 1.02 }}
-            className="flex h-[360px] w-full max-w-[420px] items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-primary to-primary-dark lg:h-[480px]"
+            className="flex h-[360px] w-full max-w-[420px] items-center justify-center overflow-hidden rounded-[6px] bg-gradient-to-br from-action to-action-hover lg:h-[480px]"
           >
             <img
               src="/konyan.webp"
@@ -40,15 +40,15 @@ export default function Instructor() {
 
           <div className="flex flex-1 flex-col gap-5">
             <AnimatedSection>
-              <h3 className="text-[28px] font-bold text-text-primary">{t('instructor.name')}</h3>
+              <h3 className="text-[1.75rem] font-extrabold text-text">{t('instructor.name')}</h3>
             </AnimatedSection>
             <AnimatedSection delay={0.1}>
-              <p className="text-base italic text-primary">
+              <p className="text-[1.0625rem] italic text-action">
                 {t('instructor.role')}
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.15}>
-              <p className="text-base leading-relaxed text-text-secondary">
+              <p className="text-[1.0625rem] leading-[1.55] text-text-muted">
                 {t('instructor.bio')}
               </p>
             </AnimatedSection>
@@ -57,9 +57,9 @@ export default function Instructor() {
               {badgesRow1.map((badge) => (
                 <StaggerItem key={badge}>
                   <motion.span
-                    whileHover={shouldReduceMotion ? {} : { scale: 1.05, borderColor: '#0D9373', color: '#0D9373' }}
+                    whileHover={shouldReduceMotion ? {} : { scale: 1.05, borderColor: '#15308F', color: '#15308F' }}
                     transition={{ type: 'spring', stiffness: 400, damping: 17 }}
-                    className="inline-block rounded-full border border-border bg-bg-light px-3.5 py-1.5 font-mono text-sm text-text-primary"
+                    className="inline-block rounded-full border border-border-default bg-surface px-3.5 py-1.5 font-data text-sm text-text"
                   >
                     {badge}
                   </motion.span>
@@ -71,9 +71,9 @@ export default function Instructor() {
               {badgesRow2.map((badge) => (
                 <StaggerItem key={badge}>
                   <motion.span
-                    whileHover={shouldReduceMotion ? {} : { scale: 1.05, borderColor: '#0D9373', color: '#0D9373' }}
+                    whileHover={shouldReduceMotion ? {} : { scale: 1.05, borderColor: '#15308F', color: '#15308F' }}
                     transition={{ type: 'spring', stiffness: 400, damping: 17 }}
-                    className="inline-block rounded-full border border-border bg-bg-light px-3.5 py-1.5 font-mono text-sm text-text-primary"
+                    className="inline-block rounded-full border border-border-default bg-surface px-3.5 py-1.5 font-data text-sm text-text"
                   >
                     {badge}
                   </motion.span>
