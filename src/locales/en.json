@@ -9,24 +9,24 @@
     "toggleMenu": "Toggle menu"
   },
   "hero": {
-    "badge": "Now enrolling · Junior & Mid developers",
+    "badge": "Now enrolling · Junior & mid developers",
     "subtitle": "THE FRONTEND PATH · 2026",
-    "title": "Tutorial apps to real products — that user used.",
-    "description": "A hands-on, two-course path that teaches modern React deeply all the way to a tested, production-ready full-stack app you build solo, with real accounts, a database and storage powered by a Backend-as-a-Service (Supabase, with Firebase awareness), then shows you how to build software with AI agents the way senior engineers actually work in 2026.",
+    "title": "From tutorial apps to a production product real users rely on.",
+    "description": "A hands-on, two-course path that takes modern React from first principles all the way to a tested, production-ready full-stack app you build yourself — with real accounts, a Supabase-powered database and storage, and the AI agent workflow senior engineers use in 2026.",
     "weeksInfo": "14 weeks · 6 hrs/week",
     "formatInfo": "Live online + OJT mentoring",
-    "startDate": "Starts Aug 2026",
-    "ctaPrimary": "Fill out the form to join",
-    "ctaSecondary": "See the curriculum"
+    "startDate": "Starts August 2026",
+    "ctaPrimary": "Reserve your seat",
+    "ctaSecondary": "View the curriculum"
   },
   "curriculum": {
     "heading": "THE CURRICULUM",
-    "title": "Two courses + a bonus track. All building on each other.",
-    "description": "Each course follows the same rhythm: understand the concept, watch it built live, build it yourself, then a checkpoint before moving on. The bonus track packages everything for your job hunt.",
+    "title": "Two courses plus a bonus track — each one builds on the last.",
+    "description": "Every course follows the same rhythm: understand the concept, watch it built live, build it yourself, then pass a checkpoint before moving on. The bonus track packages everything for your job search.",
     "courseOne": {
       "label": "Course 01",
       "title": "Production-Grade React",
-      "description": "Learn React deeply and take it all the way to a tested, shippable full-stack app.",
+      "description": "Learn React in depth and carry it all the way to a tested, shippable full-stack application.",
       "bullets": [
         "Rendering, JSX & components",
         "Hooks, state & side effects",
@@ -34,35 +34,35 @@
         "Reusable patterns & performance",
         "Server Components (RSC)",
         "Supabase backend — auth, database & storage",
-        "Testing, Core Web Vitals, a11y & security"
+        "Testing, Core Web Vitals, accessibility & security"
       ],
-      "outcome": "You leave able to build & ship a real, full-stack app."
+      "outcome": "You leave able to build and ship a real full-stack app."
     },
     "courseTwo": {
       "label": "Course 02",
       "title": "Planned AI Coding",
-      "description": "Build software with AI agents the way senior engineers do, specify, plan, tasks, implement",
+      "description": "Build software with AI agents the way senior engineers do — specify, plan, task, implement.",
       "bullets": [
-        "AI coding basics & prompting",
-        "Reviewing & testing AI output",
+        "AI coding fundamentals & prompting",
+        "Reviewing and testing AI output",
         "How agents work & context budgets",
         "Agent setup & AGENTS.md",
         "Spec-driven development",
         "Automated, guarded pipelines"
       ],
-      "outcome": "You leave able to ship faster with agents, safely."
+      "outcome": "You leave able to ship faster with agents — safely."
     },
     "bonus": {
       "label": "🎁 Bonus Track",
       "sublabel": "Career Launch",
       "title": "Getting Hired",
-      "description": "Package your capstone for the real world — CV, portfolio, LinkedIn, interviews. Every module ends with a concrete deliverable reusing the app you already built.",
+      "description": "Package your capstone for the real world — CV, portfolio, LinkedIn, interviews. Every module ends with a concrete deliverable that reuses the app you already built.",
       "bullets": [
-        "Know the target — what employers hire for",
-        "One-page CV led by the capstone",
+        "Know the target — what employers actually hire for",
+        "One-page CV led by your capstone",
         "LinkedIn profile that sells",
         "Live portfolio + case study",
-        "Freelancing & first clients",
+        "Freelancing & your first clients",
         "Interviews & landing the offer"
       ],
       "outcome": "You leave with a job-ready portfolio, CV, and interview prep."
@@ -73,26 +73,26 @@
     "heading": "HOW TO LEARN",
     "title": "One project carries you the whole way — the way real products actually get built.",
     "step1": {
-      "title": "Learn deep, think product",
-      "body": "You don't just learn React in isolation. Every concept — hooks, Suspense, performance, Supabase, RSC — is learned through *why it matters to the product*, not just how to call it. By the end of Course 01 you can read a feature brief and think: 'what's the right component shape, the right state model, the right backend call?'"
+      "title": "Learn deep. Think in product terms.",
+      "body": "You don't learn React in isolation. Every concept — hooks, Suspense, performance, Supabase, RSC — is taught through *why it matters to the product*, not just how to call it. By the end of Course 01 you can read a feature brief and think: what's the right component shape, the right state model, the right backend call?"
     },
     "step2": {
-      "title": "Collaborate like a team",
+      "title": "Collaborate like a real team.",
       "body": "Real work isn't solo. In Course 02 and the group build you work the way production teams do — taking specs from a PM, translating designs from a Figma file, discussing trade-offs, writing clean pull requests, and reviewing each other's code. The agent workflow is the same one senior engineers use to stay in sync."
     },
     "step3": {
-      "title": "Ship something real",
+      "title": "Ship something real.",
       "body": "The last step is the one that actually lands you a job or a client: you ship. Deploy the full-stack app live, write the case study, send the first proposal or application — all from the same project you built. The bonus career track just packages what you already did."
     },
     "capstone": {
       "title": "One project — from idea to shipped product in your portfolio.",
-      "body": "Not toy exercises. You build a real application the way a small team does: PM-driven, design-aware, and production-hardened. That's the kind of work that gets you hired, promoted, or your first paying client."
+      "body": "No toy exercises. You build a real application the way a small team does: PM-driven, design-aware, and production-hardened. That's the kind of work that gets you hired, promoted, or your first paying client."
     }
   },
   "toolkit": {
     "heading": "THE TOOLKIT",
-    "title": "The tools you'll actually use.",
-    "description": "The same editor, AI agents, design and shipping stack that senior engineers reach for every day, you'll be comfortable in all of them by the end.",
+    "title": "The tools you'll actually use on the job.",
+    "description": "The same editor, AI agents, design and shipping stack that senior engineers reach for every day. By the end, you'll be comfortable in all of them.",
     "codeEditor": "Code & AI editor",
     "designHandoff": "Design & handoff",
     "frontendStack": "Frontend stack",
@@ -104,9 +104,9 @@
   },
   "timeline": {
     "heading": "THE 14-WEEK TIMELINE",
-    "title": "Fourteen weeks, one weekend at a time.",
+    "title": "Fourteen weeks. One weekend at a time.",
     "description": "Nine weeks to build production React with a real Supabase backend, two to work with AI agents, a two-week group build, then one bonus week to launch your career.",
-    "scheduleInfo": "Starts Sat 1 Aug 2026 · 14 weeks · 6 hrs/week · Sat & Sun · 3 hrs/day",
+    "scheduleInfo": "Starts Saturday, 1 August 2026 · 14 weeks · 6 hrs/week · Sat & Sun · 3 hrs/day",
     "weekHeader": "Week",
     "datesHeader": "Dates",
     "phaseHeader": "Phase",
@@ -117,14 +117,14 @@
         "dates": "01–02 Aug",
         "phase": "Course 01 · React",
         "title": "React Fundamentals",
-        "desc": "How Rendering Works: JSX, components, props, controlled forms & TypeScript · build a product card"
+        "desc": "How rendering works: JSX, components, props, controlled forms & TypeScript · build a product card"
       },
       {
         "week": "2",
         "dates": "08–09 Aug",
         "phase": "Course 01 · React",
         "title": "Hooks",
-        "desc": "State & Side Effects: useState, useEffect, custom hooks & first tests · build a live search box"
+        "desc": "State & side effects: useState, useEffect, custom hooks & first tests · build a live search box"
       },
       {
         "week": "3",
@@ -166,14 +166,14 @@
         "dates": "19–20 Sep",
         "phase": "Course 01 · React",
         "title": "Backend Without a Backend — Supabase & BaaS",
-        "desc": "Auth, Postgres, storage & Row-Level Security · give your app real accounts & data"
+        "desc": "Auth, Postgres, storage & Row-Level Security · give your app real accounts and data"
       },
       {
         "week": "9",
         "dates": "26–27 Sep",
         "phase": "Course 01 · React",
         "title": "Shipping It — Production Essentials",
-        "desc": "Testing, Core Web Vitals, a11y & security · ship a hardened login form"
+        "desc": "Testing, Core Web Vitals, accessibility & security · ship a hardened login form"
       },
       {
         "week": "10",
@@ -214,33 +214,33 @@
   },
   "details": {
     "heading": "THE DETAILS",
-    "title": "What you need to know before you join.",
+    "title": "What to know before you enroll.",
     "schedule": {
       "title": "Schedule & duration",
-      "desc": "14 weeks · 6 hrs/week — Saturday & Sunday sessions, 3 hours each day, with hands-on labs — 9 weeks of React (including a Supabase backend), 2 of AI coding, and a 2-week group build. Starts August 2026."
+      "desc": "14 weeks · 6 hours per week — Saturday and Sunday sessions, 3 hours each day, with hands-on labs. Nine weeks of React (including a Supabase backend), two of AI coding, and a two-week group build. Starts August 2026."
     },
     "format": {
       "title": "Format",
-      "desc": "Live online classes combined with on-the-job (OJT) mentoring — you code, get reviewed, and improve with direct feedback."
+      "desc": "Live online classes combined with on-the-job (OJT) mentoring. You write real code, get reviewed, and improve through direct feedback."
     },
     "audience": {
       "title": "Who it's for",
-      "desc": "Junior & mid developers comfortable with HTML, CSS and JavaScript who want to become production-grade frontend engineers."
+      "desc": "Junior and mid developers comfortable with HTML, CSS, and JavaScript who want to become production-grade frontend engineers."
     }
   },
   "instructor": {
     "heading": "YOUR INSTRUCTOR",
-    "title": "Learn from someone who ships & experiences.",
+    "title": "Learn from someone who ships.",
     "name": "Nyan Lin Tun",
     "role": "Senior Full-Stack JS Developer & Project Director",
-    "bio": "8+ years building and leading production apps across web, mobile and IoT. I run developer training programs and teach junior devs React, Next.js and agentic coding in a real on-the-job format — this course is that experience, structured."
+    "bio": "8+ years building and leading production apps across web, mobile, and IoT. I run developer training programs and teach junior engineers React, Next.js, and agentic coding in a real on-the-job format — this course is that experience, structured."
   },
   "pricing": {
     "heading": "PRICING",
     "title": "One price. One path. Pay your way.",
-    "description": "Same 14-week path, same curriculum, same mentoring. Two ways to pay — pick whichever suits your budget.",
-    "ctaButton": "Confirm your spot",
-    "note": "Seats are limited so feedback stays personal. Message me to confirm a spot — I'll send payment details and answer any questions about the schedule.",
+    "description": "Same 14-week path, same curriculum, same mentoring. Two ways to pay — choose whichever suits your budget.",
+    "ctaButton": "Confirm your seat",
+    "note": "Seats are limited so feedback stays personal. Message me to reserve your spot — I'll send payment details and answer any questions about the schedule.",
     "full": {
       "label": "Option 01",
       "title": "Full payment",
@@ -257,15 +257,15 @@
     "split": {
       "label": "Option 02",
       "title": "Split in two",
-      "badge": "POPULAR",
-      "subtitle": "Same total of 1,000,000 MMK, paid across two installments.",
+      "badge": "MOST POPULAR",
+      "subtitle": "Same total of 1,000,000 MMK, paid in two installments.",
       "price": "500,000",
       "total": "1,000,000",
       "features": [
         "Installment 1 — 500,000 MMK",
         "Installment 2 — 500,000 MMK",
-        "Everything in Full payment — no difference in content or mentoring",
-        "Split the cost into two payments for easier budgeting",
+        "Everything in full payment — no difference in content or mentoring",
+        "Split the cost across two payments for easier budgeting",
         "Direct code reviews from the instructor",
         "Access to the Getting Hired bonus track",
         "A shipped full-stack product for your portfolio"
@@ -274,18 +274,18 @@
   },
   "cta": {
     "heading": "READY WHEN YOU ARE",
-    "title": "Let's talk about joining.",
-    "description": "Seats are limited so I can give real feedback. Send me a message — tell me where you are as a developer and I'll help you figure out if this path is right for you.",
-    "buttonText": "Fill out the form to join"
+    "title": "Let's talk about whether this is the right path for you.",
+    "description": "Seats are limited so I can give real, personal feedback. Send me a message — tell me where you are as a developer and I'll help you decide if this program is the right fit.",
+    "buttonText": "Fill out the enrollment form"
   },
   "footer": {
     "brand": "The Frontend Path",
-    "copyright": "© 2026 Nyan Lin Tun. Production-Grade React & AI Coding — a hands-on path for junior & mid developers."
+    "copyright": "© 2026 Nyan Lin Tun. Production-Grade React & AI Coding — a hands-on path for junior and mid developers."
   },
   "bonus": {
     "heading": "BONUS TRACK",
     "title": "Getting Hired — Career Launch Bonus.",
-    "description": "Runs right after the build while your capstone is fresh. Every module ends with a concrete deliverable that reuses the app you already shipped — no new project to invent.",
+    "description": "Runs immediately after the build while your capstone is still fresh. Every module ends with a concrete deliverable that reuses the app you already shipped — no new project to invent.",
     "modules": [
       {
         "title": "Preparing to Get Hired",
@@ -299,10 +299,10 @@
         "deliverable": "Write your positioning line: \"I build [X] with [tech] for [audience].\""
       },
       {
-        "title": "CV / Résumé That Gets Read",
+        "title": "A CV / Résumé That Gets Read",
         "subtitle": "One page that sells you",
         "bullets": [
-          "One-page dev CV led by the capstone",
+          "One-page dev CV led by your capstone",
           "Action + tech + result bullet formula",
           "Beating the ATS (applicant tracking system)",
           "Tailoring per role without rewriting"
@@ -311,10 +311,10 @@
       },
       {
         "title": "LinkedIn Profile Setup",
-        "subtitle": "Be findable, be credible",
+        "subtitle": "Be findable. Be credible.",
         "bullets": [
-          "Headline & About section that sell",
-          "Projects section with your capstone",
+          "Headline and About section that sell",
+          "Projects section featuring your capstone",
           "Keywords recruiters actually search for",
           "Making your profile discoverable"
         ],
@@ -325,22 +325,22 @@
         "subtitle": "Show, don't tell",
         "bullets": [
           "Deploy your capstone live (Vercel / Netlify)",
-          "A portfolio site that links everything together",
-          "A proper case study with before/after & decisions",
+          "A portfolio site that ties everything together",
+          "A proper case study with before/after and decisions",
           "A professional GitHub README",
           "A 60-second demo video"
         ],
         "deliverable": "Live URL + portfolio site + one written case study published."
       },
       {
-        "title": "Freelancing & First Clients",
+        "title": "Freelancing & Your First Clients",
         "subtitle": "Getting paid to build",
         "bullets": [
           "Where freelance work actually comes from",
           "Packaging a service (not selling hours)",
           "Pricing without guessing",
           "Writing proposals that win",
-          "Delivering professionally & getting referrals",
+          "Delivering professionally and earning referrals",
           "Using your AI workflow to deliver faster"
         ],
         "deliverable": "Create one service package page and send your first proposal."
@@ -351,9 +351,9 @@
         "bullets": [
           "The interview flow — what actually happens",
           "Walking through your capstone like a pro",
-          "Common React / JS questions & how to answer them",
+          "Common React and JS questions and how to answer them",
           "Take-home assignments — speed vs polish",
-          "Behavioral answers (STAR method)",
+          "Behavioral answers using the STAR method",
           "Negotiation basics — don't leave money on the table"
         ],
         "deliverable": "Record yourself walking through the capstone in under 3 minutes."
@@ -364,14 +364,14 @@
       "label": "Extra",
       "items": [
         "Personal brand & content creation",
-        "Open-source PR for credibility",
+        "Open-source PRs for credibility",
         "Networking that isn't awkward",
         "Contracts & invoicing basics"
       ]
     },
     "teachingNote": {
-      "title": "Teaching Note — Hands-on from day one.",
-      "body": "This bonus track reuses the capstone you already built across both courses. No new projects — just packaging, presenting, and leveraging what you've got. It runs right after the build while everything is fresh and deployable."
+      "title": "Teaching note — hands-on from day one.",
+      "body": "This bonus track reuses the capstone you built across both courses. No new projects — just packaging, presenting, and leveraging what you already have. It runs immediately after the build, while everything is still fresh and deployable."
     },
     "doThisNow": "Do this now:"
   }

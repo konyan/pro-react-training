@@ -149,7 +149,7 @@ export default function Pricing() {
         </div>
 
         {/* Bottom note */}
-        <AnimatedSection delay={0.2}>
+        <AnimatedSection delay={0.2} className='mx-auto'>
           <p className="max-w-[720px] text-center text-[15px] leading-[1.55] text-text-muted">
             {t('pricing.note')}
           </p>
